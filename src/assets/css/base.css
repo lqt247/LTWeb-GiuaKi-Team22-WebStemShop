@@ -8,13 +8,14 @@
 
 html {
 
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* ------------------------ */
 :root {
   --font-heading: 'Fredoka', 'Paytone One', sans-serif;
   --font-body: 'Be Vietnam Pro', 'Poppins', sans-serif;
+  --font-h2: 'Coiny', 'Kanit', sans-serif;
 }
 
 body {
@@ -40,7 +41,7 @@ h3 {
 }
 
 h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-h2);
   font-weight: 700;
   letter-spacing: 0.5px;
 }
