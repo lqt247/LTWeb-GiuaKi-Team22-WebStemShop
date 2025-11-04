@@ -783,3 +783,11 @@ main {
     color: #fff;
 }
    
+<<<<<<< HEAD
+=======
+main{
+ background-color: black;
+    padding: 500px;
+}
+
+>>>>>>> 5c62d25 (fix: update main with correct version)

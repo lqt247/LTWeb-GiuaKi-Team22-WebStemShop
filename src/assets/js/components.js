@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // === Hàm đánh dấu menu đang active ===
+<<<<<<< HEAD
 // function highlightActiveLink() {
 //   const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
@@ -71,6 +72,38 @@ function highlightActiveLink() {
       const parentLink = parentDropdown.querySelector(":scope > a");
       if (parentLink) parentLink.classList.add("active");
     }
+=======
+function highlightActiveLink() {
+  const currentPath = window.location.pathname;
+
+  // Xóa active cũ
+  document.querySelectorAll(".nav__item a").forEach(a => a.classList.remove("active"));
+
+  // Nếu là các trang thuộc nhóm Giới thiệu
+  if (
+    currentPath.includes("about.html") ||
+    currentPath.includes("about_info") ||
+    currentPath.includes("faq.html")
+  ) {
+    document
+      .querySelector('.nav__item a[href*="about.html"]')
+      ?.classList.add("active");
+  }
+
+  // Nhóm khác
+  else if (currentPath.includes("shop")) {
+    document
+      .querySelector('.nav__item a[href*="shop.html"]')
+      ?.classList.add("active");
+  } else if (currentPath.includes("blog")) {
+    document
+      .querySelector('.nav__item a[href*="blog.html"]')
+      ?.classList.add("active");
+  } else if (currentPath.includes("contact")) {
+    document
+      .querySelector('.nav__item a[href*="contact.html"]')
+      ?.classList.add("active");
+>>>>>>> 5c62d25 (fix: update main with correct version)
   }
 }
 
