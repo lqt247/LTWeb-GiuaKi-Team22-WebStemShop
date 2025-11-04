@@ -35,34 +35,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // === Hàm đánh dấu menu đang active ===
 function highlightActiveLink() {
-  const currentPath = window.location.pathname;
+  const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
-  // Xóa active cũ
-  document.querySelectorAll(".nav__item a").forEach(a => a.classList.remove("active"));
+  document.querySelectorAll(".nav__item a").forEach(a => {
+    a.classList.remove("active");
 
-  // Nếu là các trang thuộc nhóm Giới thiệu
-  if (
-    currentPath.includes("about.html") ||
-    currentPath.includes("about_info") ||
-    currentPath.includes("faq.html")
-  ) {
-    document
-      .querySelector('.nav__item a[href*="about.html"]')
-      ?.classList.add("active");
-  }
+    const linkPath = a.getAttribute("href").split("/").pop();
+    if (linkPath === currentPath) {
+      a.classList.add("active");
+    }
+  });
+}
 
-  // Nhóm khác
-  else if (currentPath.includes("shop")) {
-    document
-      .querySelector('.nav__item a[href*="shop.html"]')
-      ?.classList.add("active");
-  } else if (currentPath.includes("blog")) {
-    document
-      .querySelector('.nav__item a[href*="blog.html"]')
-      ?.classList.add("active");
-  } else if (currentPath.includes("contact")) {
-    document
-      .querySelector('.nav__item a[href*="contact.html"]')
-      ?.classList.add("active");
+// Gọi highlightActiveLink ngay sau khi load header
+async function loadComponent(id, filePath) {
+  const container = document.getElementById(id);
+  if (container) {
+    try {
+      const response = await fetch(filePath);
+      if (!response.ok) throw new Error("Không tìm thấy file: " + filePath);
+      const html = await response.text();
+      container.innerHTML = html;
+
+      if (id === "header") {
+        highlightActiveLink();
+      }
+    } catch (error) {
+      console.error("Không thể tải file:", filePath, error);
+    }
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  let basePath = window.location.pathname.includes("/pages/") ? "../../" : "src/";
+  loadComponent("header", `${basePath}components/header.html`);
+  loadComponent("footer", `${basePath}components/footer.html`);
+});
+
