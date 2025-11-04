@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/pages/sign-in_sign-up.css">
+</head>
+<body>
+<!-- Header -->
+<div id="header"></div>
+
+<main class="auth">
+    <section class="auth__container">
+        <h1 class="auth__title">Đăng ký tài khoản</h1>
+
+        <form class="auth__form" id="signUpForm">
+            <div class="auth__group">
+                <label for="username" class="auth__label">Tên người dùng</label>
+                <input type="text" id="username" class="auth__input" placeholder="Nhập tên của bạn" required>
+            </div>
+
+            <div class="auth__group">
+                <label for="email" class="auth__label">Email</label>
+                <input type="email" id="email" class="auth__input" placeholder="Nhập email của bạn" required>
+            </div>
+
+            <div class="auth__group">
+                <label for="password" class="auth__label">Mật khẩu</label>
+                <input type="password" id="password" class="auth__input" placeholder="Tạo mật khẩu" minlength="6" required>
+            </div>
+
+            <div class="auth__group">
+                <label for="confirm-password" class="auth__label">Xác nhận mật khẩu</label>
+                <input type="password" id="confirm-password" class="auth__input" placeholder="Nhập lại mật khẩu" required>
+            </div>
+
+            <button type="submit" class="auth__button">Đăng ký</button>
+
+            <p class="auth__link">
+                Đã có tài khoản?
+                <a href="sign-in.html" class="auth__link--highlight">Đăng nhập</a>
+            </p>
+        </form>
+    </section>
+</main>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script src="../../assets/js/components.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+<script>
+    document.getElementById("signUpForm").addEventListener("submit", function(e) {
+        const password = document.getElementById("password").value;
+        const confirm = document.getElementById("confirm-password").value;
+
+        if (password !== confirm) {
+            e.preventDefault();
+            alert("Mật khẩu xác nhận không khớp!");
+        }
+    });
+</script>
+</body>
+</html>
