@@ -18,22 +18,22 @@
         <form class="auth__form" id="signUpForm">
             <div class="auth__group">
                 <label for="username" class="auth__label">Tên người dùng</label>
-                <input type="text" id="username" class="auth__input" placeholder="Nhập tên của bạn" required>
+                <input type="text" id="username" class="auth__input" placeholder="Nhập tên của bạn" >
             </div>
 
             <div class="auth__group">
                 <label for="email" class="auth__label">Email</label>
-                <input type="email" id="email" class="auth__input" placeholder="Nhập email của bạn" required>
+                <input type="email" id="email" class="auth__input" placeholder="Nhập email của bạn" >
             </div>
 
             <div class="auth__group">
                 <label for="password" class="auth__label">Mật khẩu</label>
-                <input type="password" id="password" class="auth__input" placeholder="Tạo mật khẩu" minlength="6" required>
+                <input type="password" id="password" class="auth__input" placeholder="Tạo mật khẩu" minlength="6" >
             </div>
 
             <div class="auth__group">
                 <label for="confirm-password" class="auth__label">Xác nhận mật khẩu</label>
-                <input type="password" id="confirm-password" class="auth__input" placeholder="Nhập lại mật khẩu" required>
+                <input type="password" id="confirm-password" class="auth__input" placeholder="Nhập lại mật khẩu" >
             </div>
 
             <button type="submit" class="auth__button">Đăng ký</button>
@@ -54,13 +54,8 @@
 
 <script>
     document.getElementById("signUpForm").addEventListener("submit", function(e) {
-        const password = document.getElementById("password").value;
-        const confirm = document.getElementById("confirm-password").value;
-
-        if (password !== confirm) {
-            e.preventDefault();
-            alert("Mật khẩu xác nhận không khớp!");
-        }
+        e.preventDefault(); // Ngăn form reload lại trang
+        window.location.href = "sign-in.html"; // Chuyển sang trang đăng nhập
     });
 </script>
 </body>
