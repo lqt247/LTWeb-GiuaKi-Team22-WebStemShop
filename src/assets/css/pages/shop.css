@@ -287,7 +287,7 @@ main {
 .list-product__body__card__container {
     display: flex;
     flex-direction: column;
-    width: 263px;
+    width: 230px;
     height: 370px;
     border: 1px solid #d6d6d6;
     border-radius: 10px;
