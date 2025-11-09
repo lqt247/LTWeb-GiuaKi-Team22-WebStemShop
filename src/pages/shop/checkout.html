@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/layout/header.css">
+    <link rel="stylesheet" href="../../assets/css/layout/footer.css">
+    <link rel="stylesheet" href="../../assets/css/pages/checkout.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Thanh toán</title>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div class="back">
+            <a href="../../../index.html">Trang Chủ</a>
+            <span>/</span>
+            <a href="../../pages/shop/shop.html">Cửa Hàng</a>
+            <span>/</span>
+            <a href="../../pages/shop/cart.html">Giỏ hàng</a>
+            <span>/</span>
+            <a href="#">Thanh toán</a>
+        </div>
+
+        <div class="checkout-container">
+            <h1 style="margin: 40px 0">Thanh toán đơn hàng</h1>
+            <div class="checkout-container__main">
+                <!-- thông tín khách hàng -->
+                <div class="checkout-container__main__infor-customer">
+                    <!-- head -->
+                    <div class="checkout-container__main__infor-customer__title margin-top-bottom">
+                        <h2>Thông tin khách hàng</h2>
+                        <p style="color: #877575">Vui lòng điền thông tin để hoàn tất đơn hàng</p>
+                    </div>
+                    <!-- name, phone-->
+                    <div class="checkout-container__main__infor-customer__name-phone margin-top-bottom">
+                        <div class="infor-customer__name">
+                            <label for="fullname">Họ và tên*</label>
+                            <input type="text" name="fullname" placeholder="Nguyễn Văn A" class="style-input">
+                        </div>
+                        <div class="infor-customer__phone">
+                            <label for="phonenumber">Số điện thoại*</label>
+                            <input type="text" name="phonenumber" placeholder="0123456789" class="style-input">
+                        </div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="checkout-container__main__infor-customer__email margin-top-bottom">
+                        <label for="email">Email*</label>
+                        <input type="text" name="email" placeholder="email@example.com" class="style-input">
+                    </div>
+
+                    <!-- địa chỉ -->
+                    <div class="checkout-container__main__infor-customer__address margin-top-bottom">
+                        <label for="address">Địa chỉ*</label>
+                        <input type="text" name="address" placeholder="Số nhà, tên đường" class="style-input">
+                    </div>
+
+                    <!-- Thành phố -->
+                    <div class="checkout-container__main__infor-customer__city margin-top-bottom">
+                        <label for="city">Thành phố*</label>
+                        <input type="text" name="city" placeholder="TP. Hồ Chí Minh" class="style-input">
+                    </div>
+
+                    <!-- ghi chú -->
+                    <div class="checkout-container__main__infor-customer__note margin-top-bottom">
+                        <label for="note">Ghi chú đơn hàng</label>
+                        <textarea name="note" id="" placeholder="Ghi chú về đơn hàng của bạn" class="style-input"></textarea>
+                    </div>
+                </div>
+
+                <!-- thánh toán đơn hàng -->
+                <div class="checkout-container__main__pay">
+                    <!-- tổng đơn hàng -->
+                    <div class="total-order">
+                        <h2>Tổng đơn hàng</h2>
+                        <div class="tamp-pay">
+                            <p>Tạm tính</p>
+                            <span>3.717.000 Đ</span>
+                        </div>
+                        <div class="ship">
+                            <p>Phí vận chuyển</p>
+                            <span>30.000 Đ</span>
+                        </div>
+                    </div>
+                    <!-- đặt hàng -->
+                     <div class="order">
+                        <div class="total">
+                            <h2>Tổng cộng</h2>
+                            <span>3.747.000 Đ</span>
+                        </div>
+                        <button>Đặt hàng ngay</button>
+                        <p>Bằng việc đặt hàng, bạn đòng ý với</p>
+                        <a href="">Điều khoản và Chính sách của 3T STEMSHOP</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/pages/checkout.js"></script>
+</body>
+
+</html>

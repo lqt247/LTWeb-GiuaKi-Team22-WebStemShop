@@ -75,6 +75,10 @@
     margin-top: 40px;
 }
 
+.continue-shopping a {
+    text-decoration: none;
+}
+
 .continue-shopping h2 {
     cursor: pointer;
     font-weight: 800;
@@ -82,6 +86,7 @@
     border: 1px solid #FF6C80;
     border-radius: 50px;
     padding: 10px 30px;
+    margin: 0 30px;
 }
 .continue-shopping h2:hover {
     background-color: #FF6C80;
