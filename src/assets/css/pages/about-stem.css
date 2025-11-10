@@ -1,58 +1,83 @@
-
 /* ==== SECTION 1: GIỚI THIỆU CHUNG ==== */
+.stem-intro {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(rgba(82, 82, 82, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/src/assets/images/about/bg-stem.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-/* container chính */
+}
+
 .stem-intro .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-}
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgb(43, 43, 43);
 
-.stem-intro {
-  background: linear-gradient(120deg, #fff, #f9f9ff);
-  padding: 100px 0;
+  background-color: #fff;
 }
-
 
 .stem-intro__text {
   flex: 1;
+  color: #fff;
+
+
 }
 
 .stem-intro__text h1 {
-  font-size: 2.5rem;
+  font-size: 42px;
   font-weight: 800;
-  color: #222;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000000;
+
 }
 
 .stem-intro__text p {
-  color: #555;
   line-height: 1.8;
-  font-size: 1rem;
+  font-size: 14px;
+
+  color: #000000;
+
 }
 
 .stem-intro__image {
   flex: 1;
   display: flex;
   justify-content: center;
+  animation: float 5s ease-in-out infinite;
 }
 
 .stem-intro__image img {
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   object-fit: cover;
-  aspect-ratio: 4 / 3;
+  width: 350px;
+  transition: transform 0.4s ease;
 }
+
+
 
 /* ==== SECTION 2: 4 LĨNH VỰC ==== */
 .stem-core {
   padding: 100px 0;
   text-align: center;
-  background: #fff;
+  background-color: #fff9f2;
 }
 
 .stem-core h2 {
@@ -67,6 +92,7 @@
   justify-content: center;
   gap: 40px;
 }
+
 .core-item {
   background: #f9f9ff;
   padding: 40px 25px;
@@ -99,7 +125,7 @@
 
 /* ==== SECTION 3: LỢI ÍCH ==== */
 .stem-benefits {
-  background: linear-gradient(100deg, #fff5fa, #f9f9ff);
+  background-color: #faf3f3;
   padding: 100px 0;
 }
 
@@ -135,7 +161,7 @@
 /* ==== SECTION 4: LỘ TRÌNH ==== */
 .stem-levels {
   padding: 100px 0;
-  background: #fff;
+  background-color: #fff9f2;
   text-align: center;
 }
 
@@ -175,11 +201,12 @@
   color: #555;
   line-height: 1.7;
 }
+
 /* ==== NÚT: XEM HƯỚNG DẪN CHI TIẾT ==== */
 .btn-readmore-guide {
   display: inline-block;
   margin-top: 50px;
-   background-color: #ff4da6;
+  background-color: #ff4da6;
   color: #fff;
   font-weight: 600;
   padding: 14px 32px;
@@ -327,7 +354,9 @@
     font-size: 2rem;
   }
 
-  .stem-core__grid, .levels-grid, .product-grid {
+  .stem-core__grid,
+  .levels-grid,
+  .product-grid {
     gap: 25px;
   }
 }

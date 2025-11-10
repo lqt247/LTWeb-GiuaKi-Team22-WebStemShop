@@ -1,7 +1,7 @@
 /* ===== HERO ===== */
 .group-hero {
-  background: linear-gradient(120deg, #00b4d8, #48cae4);
-  color: #fff;
+  background-color: #fff9f2;
+  color: #000000;
   text-align: center;
   padding: 100px 20px;
 }
@@ -129,8 +129,8 @@
 .group-cta {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(120deg, #48cae4, #0096c7);
-  color: #fff;
+background-color: #faf3f3;
+  color: #000000;
 }
 
 .group-cta h2 {
