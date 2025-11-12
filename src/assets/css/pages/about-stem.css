@@ -1,109 +1,136 @@
-/* ==== SECTION 1: GIỚI THIỆU CHUNG ==== */
+
+/* ==== SECTION 1: GIỚI THIỆU ==== */
 .stem-intro {
   position: relative;
   min-height: 80vh;
-  overflow: hidden;
-  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image:
-    linear-gradient(rgba(82, 82, 82, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/src/assets/images/about/bg-stem.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
+  padding: 80px 0;
+  background: linear-gradient(rgba(82,82,82,0.4), rgba(0,0,0,0.4)),
+   url('/src/assets/images/about/bg-stem.jpg') center/cover no-repeat;
 }
 
 .stem-intro .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  border-radius: 50px;
-  box-shadow: 0 10px 25px rgb(43, 43, 43);
-
-  background-color: #fff;
-}
-
-.stem-intro__text {
-  flex: 1;
-  color: #fff;
-
-
+  gap: 50px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 40px;
+  width: 800px;
+  box-shadow: 0 10px 25px rgba(43,43,43,0.2);
 }
 
 .stem-intro__text h1 {
-  font-size: 42px;
+  font-size: 2.8rem;
   font-weight: 800;
+  color: #222;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #000000;
-
 }
 
 .stem-intro__text p {
-  line-height: 1.8;
-  font-size: 14px;
-
-  color: #000000;
-
-}
-
-.stem-intro__image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  animation: float 5s ease-in-out infinite;
+  font-size: 1rem;
+  color: #555;
 }
 
 .stem-intro__image img {
-  border-radius: 50%;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  object-fit: cover;
   width: 350px;
-  transition: transform 0.4s ease;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+ 
 }
 
 
-
-/* ==== SECTION 2: 4 LĨNH VỰC ==== */
-.stem-core {
+/* ==== SECTION 2A: THÀNH TỰU / COUNTER ==== */
+.stem-achievements {
   padding: 100px 0;
   text-align: center;
+  background: linear-gradient(120deg,#fff8f0,#fff);
+}
+
+.stem-achievements h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.stem-achievements p {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.achievements-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.achievement-item {
+  flex: 1 1 180px;
+  max-width: 220px;
+  background: #f9f9ff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.achievement-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.achievement-item h3 {
+  font-size: 2rem;
+  color: #ff4da6;
+  margin-bottom: 10px;
+}
+
+.achievement-item p {
+  font-size: 1rem;
+  color: #555;
+}
+.achievement-item i {
+    font-size: 2.5rem;
+    color: #ff4da6;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* ==== SECTION 2B: 4 LĨNH VỰC ==== */
+.stem-core {
+  padding: 100px 0;
   background-color: #fff9f2;
+  text-align: center;
 }
 
 .stem-core h2 {
   font-size: 2.2rem;
   margin-bottom: 50px;
-  color: #222;
 }
 
 .stem-core__grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .core-item {
   background: #f9f9ff;
   padding: 40px 25px;
   border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
   transition: 0.3s;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  flex: 1 1 220px;
+  max-width: 260px;
 }
 
 .core-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .core-item i {
@@ -114,39 +141,33 @@
 
 .core-item h3 {
   font-size: 1.3rem;
-  color: #222;
   margin-bottom: 10px;
 }
 
 .core-item p {
   color: #555;
-  line-height: 1.6;
 }
 
 /* ==== SECTION 3: LỢI ÍCH ==== */
 .stem-benefits {
-  background-color: #faf3f3;
   padding: 100px 0;
-}
-
-.stem-benefits .container {
-  max-width: 900px;
+  background-color: #faf3f3;
 }
 
 .stem-benefits h2 {
   text-align: center;
   font-size: 2.2rem;
-  color: #222;
   margin-bottom: 40px;
 }
 
 .benefits-list {
   list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .benefits-list li {
-  font-size: 1.05rem;
-  color: #444;
+  font-size: 1rem;
   margin-bottom: 18px;
   display: flex;
   align-items: center;
@@ -155,7 +176,6 @@
 
 .benefits-list i {
   color: #ff4da6;
-  font-size: 1.1rem;
 }
 
 /* ==== SECTION 4: LỘ TRÌNH ==== */
@@ -168,32 +188,32 @@
 .stem-levels h2 {
   font-size: 2.2rem;
   margin-bottom: 50px;
-  color: #222;
 }
 
 .levels-grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .level-card {
   background: #f9f9ff;
   padding: 40px 25px;
   border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
   transition: 0.3s;
+  flex: 1 1 220px;
+  max-width: 300px;
 }
 
 .level-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .level-card h3 {
   font-size: 1.4rem;
-  color: #222;
   margin-bottom: 12px;
 }
 
@@ -202,68 +222,61 @@
   line-height: 1.7;
 }
 
-/* ==== NÚT: XEM HƯỚNG DẪN CHI TIẾT ==== */
-.btn-readmore-guide {
+/* BUTTONS */
+.btn-readmore-guide, .btn-primary {
   display: inline-block;
-  margin-top: 50px;
-  background-color: #ff4da6;
-  color: #fff;
   font-weight: 600;
-  padding: 14px 32px;
   border-radius: 30px;
+  padding: 12px 28px;
+  transition: 0.3s;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(251, 133, 0, 0.3);
+  color: #fff;
+  background-color: #ff4da6;
+  margin-top: 20px;
 }
 
-.btn-readmore-guide i {
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-.btn-readmore-guide:hover {
+.btn-readmore-guide:hover, .btn-readmore:hover, .btn-primary:hover {
   background-color: #1c1c1c;
   transform: translateY(-3px);
 }
 
-.btn-readmore-guide:hover i {
-  transform: translateX(4px);
+.btn-readmore-guide i, .btn-readmore i {
+  margin-left: 8px;
 }
 
 
-
-
-/* ==== SECTION 5: SẢN PHẨM ==== */
+/* ==== SECTION 6: SẢN PHẨM ==== */
 .stem-products {
   padding: 100px 0;
-  background: linear-gradient(120deg, #fff, #fff8fb);
   text-align: center;
+  background: linear-gradient(120deg,#fff,#fff8fb);
 }
 
 .stem-products h2 {
   font-size: 2.2rem;
   margin-bottom: 50px;
-  color: #222;
 }
 
 .product-grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product-item {
+  flex: 1 1 220px;
+  max-width: 300px;
   background: #fff;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .product-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .product-item img {
@@ -274,47 +287,34 @@
 
 .product-item h4 {
   margin: 15px 0 5px;
-  color: #222;
-  font-size: 1.2rem;
 }
 
 .product-item p {
+  font-size: 0.95rem;
   color: #555;
   padding: 0 15px 20px;
-  font-size: 0.95rem;
 }
-
-.btn-center {
-  margin-top: 40px;
-}
-
-.btn-readmore {
+.btn-readmore{
   display: inline-block;
-  padding: 12px 28px;
-  background-color: #ff4da6;
-  color: #fff;
   font-weight: 600;
+  margin-top: 20px;
   border-radius: 30px;
-  text-decoration: none;
+  padding: 12px 28px;
   transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff4da6;
 }
-
-.btn-readmore:hover {
-  background-color: #1c1c1c;
-  transform: translateY(-3px);
-}
-
-/* ==== SECTION 6: CTA ==== */
+/* ==== SECTION 7: CTA CUỐI ==== */
 .stem-cta {
-  background: linear-gradient(120deg, #ffedf6, #fff);
   padding: 100px 0;
   text-align: center;
+
 }
 
 .stem-cta h2 {
   font-size: 2.3rem;
   margin-bottom: 20px;
-  color: #222;
 }
 
 .stem-cta p {
@@ -324,39 +324,14 @@
   margin: 0 auto 30px;
 }
 
-.btn-primary {
-  background: #ff4da6;
-  color: #fff;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  background: #1c1c1c;
-  transform: translateY(-3px);
-}
-
 /* ==== RESPONSIVE ==== */
 @media (max-width: 900px) {
   .stem-intro .container {
     flex-direction: column;
     text-align: center;
   }
-
-  .stem-intro__image {
-    order: -1;
-  }
-
-  .stem-intro__text h1 {
-    font-size: 2rem;
-  }
-
-  .stem-core__grid,
-  .levels-grid,
-  .product-grid {
-    gap: 25px;
-  }
+  .stem-intro__image { order: -1; margin-bottom: 20px; }
+  .stem-intro__text h1 { font-size: 2rem; }
+  .stem-core__grid, .levels-grid, .achievements-grid, .product-grid { gap: 25px; }
+  .core-item, .level-card, .achievement-item, .product-item { max-width: 90%; }
 }

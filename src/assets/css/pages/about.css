@@ -14,7 +14,9 @@
   overflow: hidden;
 }
 
-
+.about-content span{
+  font-weight: bold;
+}
 
 /* container chính */
 .about-container {
