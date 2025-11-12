@@ -1,0 +1,333 @@
+
+/* ==== SECTION 1: GIỚI THIỆU CHUNG ==== */
+
+/* container chính */
+.stem-intro .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.stem-intro {
+  background: linear-gradient(120deg, #fff, #f9f9ff);
+  padding: 100px 0;
+}
+
+
+.stem-intro__text {
+  flex: 1;
+}
+
+.stem-intro__text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.stem-intro__text p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.stem-intro__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.stem-intro__image img {
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+/* ==== SECTION 2: 4 LĨNH VỰC ==== */
+.stem-core {
+  padding: 100px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.stem-core h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.stem-core__grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.core-item {
+  background: #f9f9ff;
+  padding: 40px 25px;
+  border-radius: 16px;
+  transition: 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.core-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.core-item i {
+  font-size: 2.2rem;
+  color: #ff4da6;
+  margin-bottom: 15px;
+}
+
+.core-item h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.core-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ==== SECTION 3: LỢI ÍCH ==== */
+.stem-benefits {
+  background: linear-gradient(100deg, #fff5fa, #f9f9ff);
+  padding: 100px 0;
+}
+
+.stem-benefits .container {
+  max-width: 900px;
+}
+
+.stem-benefits h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-list li {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.benefits-list i {
+  color: #ff4da6;
+  font-size: 1.1rem;
+}
+
+/* ==== SECTION 4: LỘ TRÌNH ==== */
+.stem-levels {
+  padding: 100px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.stem-levels h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.levels-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.level-card {
+  background: #f9f9ff;
+  padding: 40px 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.level-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.level-card h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.level-card p {
+  color: #555;
+  line-height: 1.7;
+}
+/* ==== NÚT: XEM HƯỚNG DẪN CHI TIẾT ==== */
+.btn-readmore-guide {
+  display: inline-block;
+  margin-top: 50px;
+   background-color: #ff4da6;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(251, 133, 0, 0.3);
+}
+
+.btn-readmore-guide i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.btn-readmore-guide:hover {
+  background-color: #1c1c1c;
+  transform: translateY(-3px);
+}
+
+.btn-readmore-guide:hover i {
+  transform: translateX(4px);
+}
+
+
+
+
+/* ==== SECTION 5: SẢN PHẨM ==== */
+.stem-products {
+  padding: 100px 0;
+  background: linear-gradient(120deg, #fff, #fff8fb);
+  text-align: center;
+}
+
+.stem-products h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.product-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-item {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-item h4 {
+  margin: 15px 0 5px;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.product-item p {
+  color: #555;
+  padding: 0 15px 20px;
+  font-size: 0.95rem;
+}
+
+.btn-center {
+  margin-top: 40px;
+}
+
+.btn-readmore {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #ff4da6;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-readmore:hover {
+  background-color: #1c1c1c;
+  transform: translateY(-3px);
+}
+
+/* ==== SECTION 6: CTA ==== */
+.stem-cta {
+  background: linear-gradient(120deg, #ffedf6, #fff);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.stem-cta h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.stem-cta p {
+  color: #555;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.btn-primary {
+  background: #ff4da6;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1c1c1c;
+  transform: translateY(-3px);
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 900px) {
+  .stem-intro .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stem-intro__image {
+    order: -1;
+  }
+
+  .stem-intro__text h1 {
+    font-size: 2rem;
+  }
+
+  .stem-core__grid, .levels-grid, .product-grid {
+    gap: 25px;
+  }
+}
