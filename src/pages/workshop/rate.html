@@ -262,6 +262,13 @@
 
   <script src="../../assets/js/components.js"></script>
   <script>
+    // đánh giá 
+      const form = document.querySelector('.rate__content');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // chặn reload
+    window.location.href = "../../../index.html"; // chuyển về trang chủ
+  });
     //  Xử lý chọn sao
     const stars = document.querySelectorAll('.rate__stars i');
     let rating = 0;

@@ -264,7 +264,16 @@
         <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
     </div>
 </footer>
-
+  
   <script src="../../assets/js/components.js"></script>
+  <script>
+    //đăng ký
+    const form = document.querySelector('.register__content');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // chặn reload
+    window.location.href = "../../../index.html"; // chuyển về trang chủ
+  });
+  </script>
 </body>
 </html>
