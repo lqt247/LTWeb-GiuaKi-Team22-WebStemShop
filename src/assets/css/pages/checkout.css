@@ -1,0 +1,142 @@
+.back {
+    background-color: #f6f5f4;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.back a,
+.back span {
+    text-decoration: none;
+    color: #a1a0a0;
+    margin-left: 20px;
+}
+
+.checkout-container {
+    width: 1200px;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.checkout-container h1 {
+    text-align: center;
+}
+
+/* ------------thông tin khách hàng--------------------- */
+
+.checkout-container__main {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+
+
+.checkout-container__main__infor-customer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bab9b9;
+    margin: 10px;
+    padding: 14px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.checkout-container__main__infor-customer__name-phone {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.infor-customer__name,
+.infor-customer__phone {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.checkout-container__main__infor-customer__note textarea {
+    min-height: 100px;
+    ;
+}
+
+
+/* ------------thanh toán đơn hàng----------------------- */
+.checkout-container__main__pay {
+    flex: 1;
+    border: 1px solid #bab9b9;
+    margin: 10px;
+    padding: 24px;
+    border-radius: 10px;
+    height: 350px;
+    position: sticky;
+    top: 10px;
+}
+
+.style-input {
+    border: 1px solid #bab9b9;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.style-input:focus {
+    outline: none;
+    border: 2px solid #FF6C80;
+}
+
+.margin-top-bottom {
+    margin: 10px 0;
+}
+
+.total-order {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.tamp-pay,
+.ship,
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tamp-pay p,
+.ship p,
+.order p {
+    color: #877575;
+}
+
+.total span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #EC4699;
+}
+
+.order button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #EC4699;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.order {
+    text-align: center;
+}
+
+.order p,
+.order a {
+    font-size: 14px;
+}
+
+.order a {
+    text-decoration: none;
+    color: #EE59A3;
+
+}
