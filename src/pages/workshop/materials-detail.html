@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quên mật khẩu | STEAM SHOP</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/pages/sign-in_sign-up.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết tài liệu Workshop - STEMShop</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/pages/materials-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-
-</head>
-<body>
+  <body>
 <!--HEADER-->
 <header class="header">
     <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
@@ -162,25 +164,81 @@
     </div>
 </header>
 
-<main class="auth">
-    <section class="auth__container">
-        <h1 class="auth__title">Quên mật khẩu?</h1>
+    <main class="material-detail">
+      <div class="material-detail__container">
+        <div class="material-detail__image">
+          <img
+            src="../../assets/images/workshop/robot-mini.jpg"
+            alt="Lắp ráp Robot mini"
+          />
+        </div>
 
-        <form class="auth__form" id="forgotPasswordForm">
-            <div class="auth__group">
-                <label for="email" class="auth__label">Nhập email đã đăng ký</label>
-                <input type="email" id="email" class="auth__input" placeholder="ví dụ: abc@xyz.com" >
-            </div>
+        <div class="material-detail__content">
+          <h1 class="material-detail__title">
+            <i class="fa-solid fa-robot"></i> Lắp ráp Robot mini
+          </h1>
+          <p class="material-detail__desc">
+            Tài liệu này hướng dẫn các bé cách lắp ráp robot mini có thể di chuyển
+            và phát sáng, giúp rèn luyện tư duy kỹ thuật và kỹ năng sáng tạo. Các
+            bước được minh họa bằng hình ảnh dễ hiểu, phù hợp với độ tuổi từ 6–10
+            tuổi.
+          </p>
 
-            <button type="submit" class="auth__button">Gửi liên kết đặt lại mật khẩu</button>
+          <ul class="material-detail__info">
+            <li>
+              <i class="fa-solid fa-calendar-days"></i>
+              Ngày đăng: 26/10/2025
+            </li>
+            <li>
+              <i class="fa-solid fa-user-graduate"></i>
+              Độ tuổi phù hợp: 6–10 tuổi
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              Thời gian học: 30 phút
+            </li>
+          </ul>
 
-            <p class="auth__link">
-                Nhớ lại mật khẩu?
-                <a href="sign-in.html" class="auth__link--highlight">Đăng nhập</a>
-            </p>
-        </form>
-    </section>
-</main>
+          <div class="material-detail__actions">
+            <a href="materials.html" class="btn-back">
+              <i class="fa-solid fa-arrow-left"></i> Quay lại thư viện
+            </a>
+            <a href="#" class="btn-download">
+              <i class="fa-solid fa-download"></i> Tải tài liệu
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="material-detail__related">
+        <h2 class="related__title">📚 Tài liệu khác bạn có thể thích</h2>
+        <div class="related__list">
+          <div class="related__item">
+            <img
+              src="../../assets/images/workshop/science-fun.jpg"
+              alt="Khoa học vui"
+            />
+            <p>Khoa học vui</p>
+          </div>
+
+          <div class="related__item">
+            <img
+              src="../../assets/images/workshop/space.jpg"
+              alt="Khám phá không gian"
+            />
+            <p>Khám phá không gian</p>
+          </div>
+
+          <div class="related__item">
+            <img
+              src="../../assets/images/workshop/engineer.jpg"
+              alt="Kỹ sư nhí sáng tạo"
+            />
+            <p>Kỹ sư nhí sáng tạo</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
 <!--FOOTER-->
 <!-- Wave Divider -->
@@ -263,15 +321,7 @@
         <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
     </div>
 </footer>
-<script src="/src/assets/js/header.js"></script>
-<script src="../../assets/js/components.js"></script>
-<script src="../../assets/js/main.js"></script>
-
-<script>
-    document.getElementById("forgotPasswordForm").addEventListener("submit", function(e) {
-        e.preventDefault();
-        window.location.href = "sign-in.html";
-    });
-</script>
-</body>
+    <script src="/src/assets/js/header.js"></script>
+    <script src="../../assets/js/components.js"></script>
+  </body>
 </html>
