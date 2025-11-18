@@ -1,6 +1,6 @@
 /*----FAQ PAGE-----*/
 .faq {
-  background: #f9fafb;
+  background: #ffffff;
   padding: 80px 0;
   font-family: "Poppins", sans-serif;
 }
@@ -10,6 +10,31 @@
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
+}
+/*BACK_TO_HOME*/
+
+.back a {
+  border: 1px solid #757575;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Coiny', sans-serif;
+  color: black;
+}
+
+.back a:hover {
+  background-color: #FF6C80;
+  color: white;
+  transition: ease .3s;
+}
+.back a i {
+  margin-right: 5px; 
+}
+
+.back {
+  margin-bottom: 20px;
+
 }
 
 /* Header của FAQ */

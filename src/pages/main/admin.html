@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+
+  <!-- CSS chính -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/pages/admin.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="admin-container">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="admin-sidebar__logo">
+        <img src="../../assets/images/logo.png" alt="logo">
+        <h2>3.T STEM SHOP</h2>
+      </div>
+      <hr class="admin-sidebar__divider">
+      <ul class="admin-menu">
+        <li class="admin-menu__item active" data-page="dashboard"><i class="fa-solid fa-chart-line"></i> Dashboard</li>
+        <li class="admin-menu__item" data-page="products"><i class="fa-solid fa-box"></i> Sản phẩm</li>
+        <li class="admin-menu__item" data-page="orders"><i class="fa-solid fa-receipt"></i> Đơn hàng</li>
+        <li class="admin-menu__item" data-page="users"><i class="fa-solid fa-users"></i> Người dùng</li>
+        <li class="admin-menu__item" data-page="posts"><i class="fa-solid fa-blog"></i> Bài viết</li>
+        <li class="admin-menu__item" data-page="events"><i class="fa-solid fa-calendar"></i> Sự kiện</li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="admin-main">
+
+      <!-- Topbar -->
+      <header class="admin-topbar">
+        <h1 id="pageTitle">Dashboard</h1>
+        <div class="admin-info">
+          <img src="../../assets/images/about/user-male-circle.jpg" class="admin-avatar" alt="Admin">
+          <div class="admin-dropdown">
+            <p class="admin-name">Admin</p>
+            <ul>
+              <li id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Pages -->
+
+      <!-- Dashboard -->
+      <section id="dashboard" class="admin-page admin-page--active">
+        <h2>Tổng quan</h2>
+        <div class="dashboard-cards">
+          <div class="card">
+            <h3>Doanh thu</h3>
+            <p>12,500,000đ</p>
+          </div>
+          <div class="card">
+            <h3>Đơn hàng</h3>
+            <p>240</p>
+          </div>
+          <div class="card">
+            <h3>Người dùng</h3>
+            <p>1,520</p>
+          </div>
+          <div class="card">
+            <h3>Sản phẩm</h3>
+            <p>134</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="products" class="admin-page">
+        <div class="page-header">
+          <h2>Quản lý sản phẩm</h2>
+          <button class="btn-add" id="openAddProduct">+ Thêm sản phẩm</button>
+        </div>
+
+        <div class="filter-bar">
+          <input type="text" id="searchProduct" placeholder="Tìm sản phẩm..." class="filter-bar__input">
+          <div class="filter-bar__selects">
+            <select id="filterCategory">
+              <option value="">Tất cả danh mục</option>
+              <option>Robotics</option>
+              <option>Điện tử</option>
+              <option>STEM Kit</option>
+            </select>
+            <select id="filterPrice">
+              <option value="">Tất cả giá</option>
+              <option value="lt200">Dưới 200.000đ</option>
+              <option value="200-500">200.000 - 500.000đ</option>
+              <option value="gt500">Trên 500.000đ</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Ảnh</th>
+                <th>Tên</th>
+                <th>Danh mục</th>
+                <th>Giá</th>
+                <th>Tác vụ</th>
+              </tr>
+            </thead>
+            <tbody id="productsTable">
+              <!-- Dữ liệu JS sẽ load vào đây -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Orders -->
+      <section id="orders" class="admin-page">
+        <h2>Đơn hàng</h2>
+        <input type="text" id="searchOrder" placeholder="Tìm đơn hàng...">
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Khách hàng</th>
+                <th>Sản phẩm</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+                <th>Tác vụ</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTable">
+              <!-- Dữ liệu JS load vào -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Users -->
+      <section id="users" class="admin-page">
+        <h2>Người dùng</h2>
+        <input type="text" id="searchUser" placeholder="Tìm người dùng...">
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Vai trò</th>
+              </tr>
+            </thead>
+            <tbody id="usersTable">
+              <!-- Dữ liệu JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Posts -->
+      <section id="posts" class="admin-page">
+        <h2>Bài viết</h2>
+        <button class="btn-add" id="openPostForm">+ Thêm bài viết</button>
+        <input type="text" id="searchPost" placeholder="Tìm bài viết...">
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Ảnh</th>
+                <th>Tiêu đề</th>
+                <th>Tag</th>
+                <th>Ngày</th>
+                <th>Tác vụ</th>
+              </tr>
+            </thead>
+            <tbody id="postsTable">
+              <!-- JS load bài viết -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Events -->
+      <section id="events" class="admin-page">
+        <h2>Sự kiện</h2>
+        <button class="btn-add" id="openAddEvent">+ Thêm sự kiện</button>
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tên sự kiện</th>
+                <th>Ngày</th>
+                <th>Địa điểm</th>
+                <th>Tác vụ</th>
+              </tr>
+            </thead>
+            <tbody id="eventsTable">
+              <!-- JS load sự kiện -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Popup thêm bài viết -->
+  <div class="popup" id="postForm">
+    <div class="popup-content">
+      <h3>Thêm bài viết mới</h3>
+      <input type="text" id="postTitle" placeholder="Tiêu đề bài viết">
+      <input type="date" id="postDate">
+      <input type="file" id="postImage">
+      <img id="previewImage" alt="Preview">
+      <div class="tag-input">
+        <input type="text" id="tagInput" placeholder="Nhập tag và Enter">
+        <div id="tagList"></div>
+      </div>
+      <button id="savePost" class="btn-add">Lưu bài viết</button>
+      <button id="closePostForm" class="btn-add" style="background:#aaa;">Đóng</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="../../assets/js/pages/admin.js"></script>
+</body>
+</html>
