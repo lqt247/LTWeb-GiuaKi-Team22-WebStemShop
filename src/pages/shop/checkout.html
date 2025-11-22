@@ -171,7 +171,7 @@
 
         <div class="checkout-container">
             <h1 style="margin: 40px 0">Thanh toán đơn hàng</h1>
-            <div class="checkout-container__main">
+            <form class="checkout-container__main">
                 <!-- thông tín khách hàng -->
                 <div class="checkout-container__main__infor-customer">
                     <!-- head -->
@@ -231,34 +231,52 @@
                             <span>30.000 Đ</span>
                         </div>
                     </div>
-                    <!-- đặt hàng -->
-                    <div class="order">
-                        <div class="total">
-                            <h2>Tổng cộng</h2>
-                            <span>3.747.000 Đ</span>
+                    <div class="voucher">
+                        <h3><i class="fa-solid fa-ticket"></i> Mã giảm giá</h3>
+                        <div class="voucher__add">
+                            <input type="text" placeholder="Nhập mã gảim giá" name="add-voucher">
+                            <button>Áp dụng</button>
                         </div>
-                        <button>Đặt hàng ngay</button>
-                        <p>Bằng việc đặt hàng, bạn đòng ý với</p>
-                        <a href="">Điều khoản và Chính sách của 3T STEMSHOP</a>
+                    </div>
+                    <div class="payment-method">
+                        <h3>Phương thức thanh toán</h3>
+                        <div class="payment-method__select">
+                            <div class="payment-method__select__option">
+                                <input type="checkbox">
+                                <div class="content">
+                                    <h3>Tiền mặt</h3>
+                                    <p>Thanh toán khi nhận được hàng</p>
+                                </div>
+                            </div>
+                            <div class="payment-method__select">
+                                <div class="payment-method__select__option">
+                                    <input type="checkbox">
+                                    <div class="content">
+                                        <h3>Trả góp</h3>
+                                        <p>Thanh toán chuyển khoản</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- đặt hàng -->
+                        <div class="order">
+                            <div class="total">
+                                <h2>Tổng cộng</h2>
+                                <span>3.747.000 Đ</span>
+                            </div>
+                            <button id="btnOder">Đặt hàng ngay</button>
+                            <p>Bằng việc đặt hàng, bạn đòng ý với</p>
+                            <a href="/src/pages/main/terms.html">Điều khoản và Chính sách của 3T STEMSHOP</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </form>
 
 
     </main>
+
     <!--FOOTER-->
-    <!-- Wave Divider -->
-    <div class="footer-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
-            <path fill="rgba(236,117,173,1)"
-                d="M0,50 C80,80 160,30 240,60 C320,90 400,40 480,70 C560,90 640,50 720,80 C800,90 880,50 960,80 C1040,90 1120,50 1200,70 C1280,90 1360,60 1440,80 L1440,100 L0,100 Z" />
-        </svg>
-    </div>
-
-    <!--footer-->
     <footer class="footer">
-
         <div class="container  footer__container">
             <div class="footer__col footer__logo">
                 <div class="logo">
