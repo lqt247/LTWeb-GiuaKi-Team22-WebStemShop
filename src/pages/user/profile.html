@@ -235,27 +235,8 @@
       </div>
     </section>
 
-    <!-- Bài viết đã theo dõi -->
-    <section class="profile__blogs">
-      <h3><i class="fa-solid fa-heart"></i> Bài viết đã theo dõi</h3>
-      <div class="blogs__list">
-        <article class="blog__item">
-          <img src="../../assets/images/blog/robot-blog.jpg" alt="Robot Blog" />
-          <div class="blog__info">
-            <h4><a href="../page/blog-detail.html">5 Lý do vì sao nên cho bé học lập trình sớm</a></h4>
-            <p><i class="fa-solid fa-calendar-day"></i> 12/10/2025</p>
-          </div>
-        </article>
+  
 
-        <article class="blog__item">
-          <img src="../../assets/images/blog/creative-play.jpg" alt="Chơi sáng tạo" />
-          <div class="blog__info">
-            <h4><a href="../page/blog-detail.html">Chơi sáng tạo giúp bé phát triển tư duy STEM</a></h4>
-            <p><i class="fa-solid fa-calendar-day"></i> 02/10/2025</p>
-          </div>
-        </article>
-      </div>
-    </section>
   </main>
 
 <!--FOOTER-->
@@ -339,7 +320,37 @@
         <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
     </div>
 </footer>
+
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+    const headerLogin = document.querySelector(".header__user-login");
+    const headerLogged = document.querySelector(".header__user-logged");
+
+    if (userInfo) {
+        headerLogin && (headerLogin.style.display = "none");
+        headerLogged && (headerLogged.style.display = "flex");
+
+        const nameText = document.querySelector(".user-short-name");
+        if (nameText) nameText.textContent = userInfo.name;
+    } else {
+        headerLogin && (headerLogin.style.display = "flex");
+        headerLogged && (headerLogged.style.display = "none");
+    }
+});
+
+// Logout
+  const logoutBtn = document.getElementById("logoutBtn");
+  if (logoutBtn) {
+      logoutBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        localStorage.removeItem("userInfo");
+        window.location.href = "/src/pages/user/sign-in.html";
+      });
+}
+
+
     document.addEventListener("DOMContentLoaded", () => {
     const user = JSON.parse(localStorage.getItem("userInfo"));
 
@@ -349,7 +360,7 @@
     }
 });
 </script>
-  <script src="/src/assets/js/header.js"></script>
+  
   <script src="../../assets/js/components.js"></script>
 </body>
 </html>
