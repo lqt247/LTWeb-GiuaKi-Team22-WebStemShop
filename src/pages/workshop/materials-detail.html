@@ -176,8 +176,7 @@
             <span><i class="fa-regular fa-calendar"></i> Cập nhật: 10/01/2025</span>
         </div>
 
-        <!-- ẢNH COVER -->
-        <!-- <img src="https://ohstem.vn/wp-content/uploads/2021/09/Robot-ne-vat-can.jpg" class="detail__cover"> -->
+
 
 	<div class="toc">
     <h3>Mục lục</h3>
@@ -275,6 +274,14 @@ void loop(){
 
 </main>
 
+<!--FOOTER-->
+<!-- Wave Divider -->
+<div class="footer-wave">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path fill="rgba(236,117,173,1)" d="M0,50 C80,80 160,30 240,60 C320,90 400,40 480,70 C560,90 640,50 720,80 C800,90 880,50 960,80 C1040,90 1120,50 1200,70 C1280,90 1360,60 1440,80 L1440,100 L0,100 Z"/>
+  </svg>
+</div>
+
 <!--footer-->
 <footer class="footer">
 
@@ -349,37 +356,9 @@ void loop(){
     </div>
 </footer>
 
-<script>
-const materials = [
-    { title: "Giới thiệu Arduino Uno", img: "../../assets/images/products/p1.jpg", tag: "arduino", link: "materials-detail.html" },
-    { title: "Cảm biến nhiệt độ & độ ẩm", img: "../../assets/images/products/p2.jpg", tag: "sensor", link: "materials-detail.html" },
-    { title: "Robot tránh vật cản", img: "../../assets/images/products/p3.jpg", tag: "robot", link: "materials-detail.html" },
-    { title: "Lập trình LED RGB", img: "../../assets/images/products/p4.jpg", tag: "arduino", link: "materials-detail.html" },
-    { title: "Bluetooth điều khiển Robot", img: "../../assets/images/products/p5.jpg", tag: "robot", link: "materials-detail.html" },
-    { title: "Cảm biến ánh sáng LDR", img: "../../assets/images/products/p7.jpg", tag: "sensor", link: "materials-detail.html" },
-];
-
-const currentTag = "robot"; // Gắn tag theo dự án
-
-const relatedList = document.getElementById("relatedList");
-
-materials
-    .filter(item => item.tag === currentTag && item.title !== "Robot tránh vật cản")
-    .slice(0, 3)
-    .forEach(item => {
-        relatedList.innerHTML += `
-            <a class="related-item" href="${item.link}">
-                <img src="${item.img}">
-                <div>
-                    <h4>${item.title}</h4>
-                    <span><i class="fa-regular fa-eye"></i> 1.2k</span>
-                </div>
-            </a>
-        `;
-    });
-</script>
+<script src="../../assets/js/pages/materials-detail.js"></script>
 <script src="../../assets/js/components.js"></script>
 <script src="../../assets/js/main.js"></script>
-<script src="../../assets/js/materials-detail.js"></script>
+
 </body>
 </html>
