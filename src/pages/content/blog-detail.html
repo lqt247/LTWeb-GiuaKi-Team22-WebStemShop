@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết bài viết</title>
+
+
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/pages/blog-detail.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+   <!--HEADER-->
+<header class="header">
+    <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
+    <div class="header__first">
+        <div class="container">
+            <div class="header__top-left">
+                <a href="https://maps.app.goo.gl/nj1KfxS8ajpDxTni6" target="_blank">
+                    <span><i class="fa-solid fa-location-dot"></i> Trường Đại Học Nông Lâm TPHCM</span></a>
+                <a href="" target="_blank"><span><i class="fa-solid fa-envelope"></i>
+                        shopstemteam22@gmail.com</span>
+                </a>
+            </div>
+            <div class="header__top-right">
+                <div class="header__phone-top">
+                    <a href="" target="_blank"><span><i class="fa-solid fa-phone"></i>
+                            +84 123456789</span>
+                    </a>
+                </div>
+                <div class="header_icon-top">
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-amazon"></i> </a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-twitter"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PHẦN DƯỚI:  menu + user -->
+    <div class="header__end">
+        <div class="container">
+            <div class="header__end-left">
+                <div class="header__logo">
+                    <a href="/index.html"> <img src="/src/assets/images/logo.png" alt="logo"> </a>
+                </div>
+                <div class="header__nav">
+
+                    <!--NAV-->
+
+                    <nav class="nav-content">
+                        <ul class="nav__list">
+
+                            <!-- Trang chủ -->
+
+                            <li class="nav__item"><a href="/index.html">Trang chủ</a></li>
+
+                            <!-- Giới thiệu -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/main/about.html">Giới thiệu <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/src/pages/about_info/about-stem.html">Về STEMSHOP</a></li>            
+                                    <li><a href="/src/pages/about_info/mission.html">Sứ mệnh & Tầm nhìn</a></li>
+                                    <li><a href="/src/pages/about_info/guide.html">Tài liệu hướng dẫn</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Cửa hàng -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/shop/shop.html">Cửa hàng <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+                                    <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
+                                    <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
+                                    <li><a href="/src/pages/shop/checkout.html">Thanh toán</a></li>
+                                </ul>
+                            </li>
+                            <!-- Bài viết -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/content/blog.html">Bài viết <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/src/pages/content/blog-category.html">Danh mục bài viết</a></li>                                           
+                                </ul>
+                            </li>
+
+                            <!-- Sự kiện -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/workshop/events.html">Sự kiện <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
+                                    <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                    <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Liên hệ -->
+                            <li class="nav__item"><a href="/src/pages/main/contact.html">Liên hệ</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+  <div class="header__end-right">
+
+                    <div class="header__shop">
+                        <a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                        <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <!-- KHI CHƯA ĐĂNG NHẬP -->
+                    <div class="header__user header__user-login">
+                        <a href="/src/pages/user/sign-in.html"><span><i class="fas fa-user"></i> Đăng nhập </span></a>
+                        <span class="divider">|</span>
+                        <a href="/src/pages/user/sign-up.html"><span> <i class="fas fa-pencil-alt"></i> Đăng ký
+                            </span></a>
+                    </div>
+
+                    <!-- KHI ĐÃ ĐĂNG NHẬP -->
+                    <div class="header__user header__user-logged">
+
+                        <i class="fa-solid fa-circle-user user-avatar-icon"></i>
+                        <span class="user-short-name">Bé Minh Anh</span>
+                        <div class="user-dropdown">
+
+
+                            <ul class="dropdown-menu-user">
+                                <li><a href="/src/pages/user/profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a>
+                                </li>
+                                <li><a href="/src/pages/shop/cart.html"><i class="fa-solid fa-box"></i> Đơn hàng</a>
+                                </li>
+                                <li><a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i> sản phẩm
+                                        yêu thích</a></li>
+                                <li><a href="/src/pages/workshop/events.html"><i class="fa-solid fa-calendar-check"></i>
+                                        Sự kiện đã tham gia</a></li>
+                                <li class="logout"><a href="#" id="logoutBtn"><i
+                                            class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+    
+        </div>
+    </div>
+</header>
+
+     <div class="blog-category-bannerMain">
+            <div class="blog-banner__content">
+                <h1 class="blog-banner__title">Chi tiết bài viét</h1>
+                <div class="blog-breadcrumb">
+                    <a href="/index.html">Trang chủ</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Khơi dậy niềm yêu thích STEM cho trẻ nhỏ</span>
+                </div>
+            </div>
+        </div>
+    <main class="blog-detail container">
+       
+      
+        <!--Bài viết chi tiết-->
+        <article class="post-detail">
+            <h1 class="post-detail__title">Khơi dậy niềm yêu thích STEM cho trẻ nhỏ</h1>
+            <p class="post-detail__meta">
+                <i class="fa-regular fa-calendar"></i>  12/08/2025 • 
+              <i class="fa-regular fa-newspaper"></i> Nguồn: STEM World
+                </p>
+                   
+                      
+            <!-- Thẻ tag -->
+            <div class="post-detail__tags">
+                <span>Tags: </span>
+                <a href="blog-category.html?tag=STEM" class="tag">STEM</a>
+                <a href="blog-category.html?tag=Giáo dục" class="tag">Giáo dục</a>
+                <a href="blog-category.html?tag=Sáng tạo" class="tag">Sáng tạo</a>
+            </div>
+
+            <img src="../../assets/images/blog/STEM trong đời sống.jpg" alt="STEM cho trẻ nhỏ"
+                class="post-detail__image">
+            <p class="post-detail__content">
+                <strong>Phương pháp giáo dục STEM là gì?</strong><br>
+                Giáo dục STEM là phương pháp tích hợp bốn bộ môn: Science (Khoa học), Technology (Công nghệ),
+                Engineering (Kỹ thuật) và Mathematics (Toán học). Điểm nổi bật của STEM là cách tiếp cận liên ngành và
+                lồng ghép kiến thức vào bối cảnh thực tiễn, giúp học sinh có cái nhìn đa chiều và khả năng ứng dụng cao.
+                Các bài học STEM thường dựa trên các tình huống thực tế hoặc câu chuyện gần gũi, giúp học sinh cảm thấy
+                hứng thú và dễ tiếp thu kiến thức hơn.
+            </p>
+
+            <p class="post-detail__content">
+                <strong>Cách triển khai bài học STEM</strong><br>
+                Trong các lớp học STEM, học sinh thường tham gia vào các dự án học tập kéo dài từ vài buổi đến nhiều
+                tuần, có thể thực hiện tại lớp, tại nhà hoặc thông qua việc tìm hiểu dữ liệu từ thư viện, mạng internet
+                và các bảo tàng. Các dự án này khuyến khích học sinh làm việc cá nhân hoặc theo nhóm, vận dụng kiến thức
+                liên môn để tạo ra sản phẩm thực tế. Mỗi dự án đều giúp học sinh rèn luyện khả năng tư duy logic, sáng
+                tạo, kỹ năng giải quyết vấn đề và hợp tác nhóm.
+            </p>
+
+            <p class="post-detail__content">
+                <strong>Mô hình dạy học 5E</strong><br>
+                Một trong những phương pháp giảng dạy STEM phổ biến là mô hình 5E: Engage (Gắn kết), Explore (Khám phá),
+                Explain (Diễn giải), Elaborate (Củng cố) và Evaluate (Đánh giá). Theo mô hình này, học sinh được khơi
+                gợi sự tò mò, thực hành khám phá kiến thức mới, củng cố hiểu biết qua trải nghiệm thực tế và cuối cùng
+                được đánh giá dựa trên sản phẩm và kết quả học tập. Quy trình này giúp học sinh học một cách chủ động,
+                khám phá và phát triển khả năng tự đánh giá.
+            </p>
+
+            <p class="post-detail__content">
+                <strong>Quy trình thiết kế công nghệ trong STEM</strong><br>
+                Giáo dục STEM cũng chú trọng việc học thông qua thực hành theo quy trình thiết kế công nghệ: nêu vấn đề
+                – đề xuất giải pháp – lập kế hoạch – thực hiện – kiểm tra và đánh giá. Nếu gặp sự cố, học sinh sẽ điều
+                chỉnh hoặc cải tiến ý tưởng, từ đó học được cách kiên nhẫn, tư duy phản biện và rèn luyện kỹ năng thực
+                hành. Cuối cùng, học sinh sẽ trình bày sản phẩm của mình với bạn bè hoặc cộng đồng, nhận phản hồi và
+                tiếp tục hoàn thiện sản phẩm.
+            </p>
+
+            <p class="post-detail__content">
+                <strong>Lợi ích của giáo dục STEM</strong><br>
+                Giáo dục STEM mang lại nhiều lợi ích quan trọng cho trẻ, bao gồm:
+            <ul>
+                <li><strong>Phát triển sự sáng tạo:</strong> Khơi dậy khả năng tưởng tượng, đưa ra ý tưởng và dự án mới
+                    mẻ.</li>
+                <li><strong>Kỹ năng giải quyết vấn đề:</strong> Rèn luyện tư duy phản biện, phân tích và tìm ra giải
+                    pháp.</li>
+                <li><strong>Sức bền bỉ:</strong> Học sinh học cách chấp nhận thất bại, thử lại nhiều lần và rèn luyện sự
+                    kiên nhẫn.</li>
+                <li><strong>Khuyến khích thử nghiệm:</strong> Tạo môi trường an toàn để học sinh mạo hiểm và khám phá
+                    các ý tưởng mới.</li>
+                <li><strong>Hợp tác nhóm:</strong> Học sinh làm việc nhóm, chia sẻ kiến thức, kỹ năng và cùng hoàn thiện
+                    sản phẩm.</li>
+                <li><strong>Áp dụng kiến thức vào thực tiễn:</strong> Các kỹ năng học được có thể ứng dụng ngay trong
+                    cuộc sống hằng ngày.</li>
+                <li><strong>Tiếp cận công nghệ:</strong> Học sinh làm quen với công nghệ mới, sẵn sàng thích ứng với môi
+                    trường công nghệ toàn cầu.</li>
+                <li><strong>Khả năng thích nghi:</strong> Biết cách áp dụng kiến thức vào các tình huống khác nhau.</li>
+                <li><strong>Học tập vui vẻ:</strong> Thông qua các hoạt động thú vị như lập trình robot, thí nghiệm khoa
+                    học, học sinh vừa học vừa chơi.</li>
+            </ul>
+            </p>
+
+            <p class="post-detail__content">
+                Nhờ những lợi ích trên, giáo dục STEM không chỉ trang bị kiến thức mà còn phát triển kỹ năng tư duy,
+                sáng tạo và khả năng ứng dụng thực tế, giúp học sinh tự tin và sẵn sàng đối mặt với các thách thức trong
+                học tập và cuộc sống.
+            </p>
+
+        </article>
+
+        <!--Bài viết liên quan-->
+        <aside class="post-detail__sidebar">
+            <div class="blog-detail-close">
+                <h2>Bài viết liên quan</h2>
+                <ul>
+                    <li><a href="blog-detail.html">Workshop STEM - Học qua thực hành</a></li>
+                    <li><a href="blog-detail.html">Top 5 dự án STEM tại nhà</a></li>
+                    <li><a href="blog-detail.html">Ứng dụng Arduino trong STEM</a></li>
+                </ul>
+            </div>
+            <div class="blog-detail__commnet">
+                <!-- Bình luận -->
+
+                <h2>Bình luận mới nhất</h2>
+                <div class="comments-container">
+                    <div class="comment">
+                        <p class="comment-author">Phan Đình Long <span class="comment-date">12/11/2025</span></p>
+                        <p class="comment-text">Bài viết rất bổ ích!</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-author">Sơn Tùng MTP<span class="comment-date">12/11/2025</span></p>
+                        <p class="comment-text">Flop quá thì ghi tên anh vào!</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-author">Lê Quang Trường<span class="comment-date">12/11/2025</span></p>
+                        <p class="comment-text">Bài viết đọc rất thú vị, ahah</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-author">Trần Thanh Tuấn<span class="comment-date">12/11/2025</span></p>
+                        <p class="comment-text">Đọc vào là muốn khơi dậy liền!</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-author">Lý Tiểu Long<span class="comment-date">12/11/2025</span></p>
+                        <p class="comment-text">Đọc vào là đá luôn đá, à cha à cha!</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-author">Fan T1<span class="comment-date">12/11/2025</span></p>
+                        <p class="comment-text">6 cúp cũng không hay bằng bài viết này!</p>
+                    </div>
+                </div>
+
+                <!-- Form bình luận riêng -->
+                <div class="comment-form-wrapper">
+                    <h2>Viết bình luận của bạn</h2>
+                    <div class="login-demo">
+                        <button id="login-btn"><i class="fa-brands fa-user-graduate"></i> Đăng nhập </button>
+                        <span id="login-status">Chưa đăng nhập</span>
+                    </div>
+
+                    <form id="comment-form">
+                        <div class="form-avatar">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="form-fields">
+                            <textarea id="comment-text" placeholder="Viết bình luận..." required></textarea>
+                            <button type="submit"><i class="fa-solid fa-paper-plane"></i> Gửi bình luận</button>
+                        </div>
+                    </form>
+                </div>
+        </aside>
+
+    </main>
+
+    <!--FOOTER-->
+<!-- Wave Divider -->
+<div class="footer-wave">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path fill="rgba(236,117,173,1)" d="M0,50 C80,80 160,30 240,60 C320,90 400,40 480,70 C560,90 640,50 720,80 C800,90 880,50 960,80 C1040,90 1120,50 1200,70 C1280,90 1360,60 1440,80 L1440,100 L0,100 Z"/>
+  </svg>
+</div>
+
+<!--footer-->
+<footer class="footer">
+
+    <div class="container  footer__container">
+        <div class="footer__col footer__logo">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/src/assets/images/logo.png" alt="logo" style="width: 15rem; height: auto; object-fit: contain; display: block; 
+                        margin: auto;">
+                </a>
+            </div>
+            <div class="footer__icon">
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-amazon"></i> </a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-twitter"></i> </a>
+            </div>
+            <p>
+                3.T STEMSHOP – Nơi mang đến dụng cụ học tập STEM giúp trẻ em vừa học vừa chơi, <br>
+                phát triển tư duy logic, khả năng sáng tạo và niềm đam mê khám phá khoa học từ sớm.
+            </p>
+        </div>
+        <!-- CỘT LIÊN KẾT NHANH -->
+        <div class="footer__col footer__quickLinks">
+            <h3>Liên kết nhanh</h3>
+            <ul>
+                <ul>
+                    <ul>
+                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="/src/pages/main/about.html">Giới thiệu</a></li>
+                        <li><a href="/src/pages/shop/shop.html">Cửa hàng</a></li>
+                        <li><a href="/src/pages/content/blog.html">Bài viết</a></li>
+                        <li><a href="/src/pages/main/contact.html">Liên hệ</a></li>
+
+                    </ul>
+
+                </ul>
+            </ul>
+        </div>
+        <!-- CỘT HỖ TRỢ KHÁCH HÀNG -->
+
+        <div class="footer__col footer__customerSupport">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="/src/pages/main/faq.html">Câu hỏi thường gặp</a></li>
+                <li><a href="/src/pages/main/policy.html">Chính sách bảo hành</a></li>
+                <li><a href="/src/pages/main/terms.html">Điều khoản sử dụng</a></li>
+            </ul>
+        </div>
+        <!-- CỘT LIÊN HỆ -->
+        <div class="footer__col footer__contact">
+            <h3>Liên hệ</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Trường Đại học Nông Lâm TP.HCM</p>
+            <p><i class="fa-solid fa-envelope"></i> shopstemteam22@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +84 123 456 789</p>
+        </div>
+        <!-- CỘT NHẬN THÔNG BÁO -->
+        <div class="footer__col footer__contact-sendus">
+            <h3>Nhận thông báo ngay!</h3>
+            <p>Nhập email của bạn để nhận các chương trình mới nhất từ STEMSHOP!</p>
+            <form action="" class="footer__newsletter">
+                <input type="email" placeholder="Nhập email của bạn!">
+                <button type="submit">Gửi ngay</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
+    </div>
+</footer>
+    <!--Link Components-->
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/header.js"></script>
+</body>
+
+</html>

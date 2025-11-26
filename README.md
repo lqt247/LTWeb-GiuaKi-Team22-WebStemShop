@@ -59,8 +59,6 @@
           - **blog.html** → Danh sách bài viết
           - blog-category.html  → Danh mục bài viết
           - blog-detail.html → Chi tiết bài viết
-          - gallery.html → Bộ sưu tập hình ảnh
-          - resources.html    → Tài nguyên học tập – ebook, link học, file PDF, video, v.v
         - workshop/   → Sự kiện & hoạt động STEM
             - **events.html**  → Sự kiện, Workshop STEM
             - rate.html  → Đánh giá khách hàng

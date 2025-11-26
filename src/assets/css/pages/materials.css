@@ -1,0 +1,138 @@
+.materials {
+  background-color: #fff8fb;
+  padding: 60px 20px;
+}
+
+.materials__title {
+  text-align: center;
+  color: #ff4da6;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.materials__desc {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+/* Bố cục 2 cột */
+.materials__layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Sidebar trái */
+.materials__sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.15);
+}
+
+.sidebar__title {
+  color: #ff4da6;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar__item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.sidebar__name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.sidebar__date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Grid tài liệu bên phải */
+.materials__grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.material__card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.15);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.material__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(255, 105, 180, 0.25);
+}
+
+.material__card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.material__info {
+  padding: 18px;
+  text-align: left;
+}
+
+.material__title {
+  color: #ff69b4;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.material__text {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.material__btn {
+  display: inline-block;
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 0.95rem;
+}
+
+.material__btn:hover {
+  background-color: #ff4da6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .materials__layout {
+    flex-direction: column;
+  }
+
+  .materials__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

@@ -9,8 +9,157 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-<!-- Header -->
-<div id="header"></div>
+
+<!--HEADER-->
+<header class="header">
+    <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
+    <div class="header__first">
+        <div class="container">
+            <div class="header__top-left">
+                <a href="https://maps.app.goo.gl/nj1KfxS8ajpDxTni6" target="_blank">
+                    <span><i class="fa-solid fa-location-dot"></i> Trường Đại Học Nông Lâm TPHCM</span></a>
+                <a href="" target="_blank"><span><i class="fa-solid fa-envelope"></i>
+                        shopstemteam22@gmail.com</span>
+                </a>
+            </div>
+            <div class="header__top-right">
+                <div class="header__phone-top">
+                    <a href="" target="_blank"><span><i class="fa-solid fa-phone"></i>
+                            +84 123456789</span>
+                    </a>
+                </div>
+                <div class="header_icon-top">
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-amazon"></i> </a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-twitter"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PHẦN DƯỚI:  menu + user -->
+    <div class="header__end">
+        <div class="container">
+            <div class="header__end-left">
+                <div class="header__logo">
+
+
+                    <a href="/index.html"> <img src="/src/assets/images/logo.png" alt="logo"> </a>
+
+                </div>
+                <div class="header__nav">
+
+                    <!--NAV-->
+
+                    <nav class="nav-content">
+                        <ul class="nav__list">
+
+                            <!-- Trang chủ -->
+
+
+
+                            <li class="nav__item"><a href="/index.html">Trang chủ</a></li>
+
+                            <!-- Giới thiệu -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/main/about.html">Giới thiệu <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+
+
+                                    <li><a href="/src/pages/about_info/about-stem.html">Về STEMSHOP</a></li>            
+                                    <li><a href="/src/pages/about_info/mission.html">Sứ mệnh & Tầm nhìn</a></li>
+                                    <li><a href="/src/pages/about_info/guide.html">Tài liệu hướng dẫn</a></li>
+
+                                      <li><a href="/src/pages/about_info/about-group.html">Nhóm phát triển</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Cửa hàng -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/shop/shop.html">Cửa hàng <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+
+
+                                    <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+
+                                    <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
+                                    <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
+                                    <li><a href="/src/pages/shop/checkout.html">Thanh toán</a></li>
+                                </ul>
+                            </li>
+                            <!-- Bài viết -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/content/blog.html">Bài viết <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+
+
+                                    <li><a href="/src/pages/content/blog-category.html">Danh mục bài viết</a></li>                                           
+
+                                </ul>
+                            </li>
+
+                            <!-- Sự kiện -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/workshop/events.html">Sự kiện <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+
+
+                                    <li><a href="/src/pages/workshop/events.html">Workshop</a></li>
+
+                                    <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
+                                    <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                    <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Liên hệ -->
+                            <li class="nav__item"><a href="/src/pages/main/contact.html">Liên hệ</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+<div class="header__end-right">
+
+  <div class="header__shop">
+    <a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+    <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <!-- KHI CHƯA ĐĂNG NHẬP -->
+  <div class="header__user header__user-login">
+      <a href="/src/pages/user/sign-in.html">Đăng nhập</a>
+      <span class="divider">|</span>
+      <a href="/src/pages/user/sign-up.html">Đăng ký</a>
+  </div>
+
+  <!-- KHI ĐÃ ĐĂNG NHẬP -->
+  <div class="header__user header__user-logged">
+      
+      <i class="fa-solid fa-circle-user user-avatar-icon"></i>
+      <span class="user-short-name">Bé Minh Anh</span>
+      <div class="user-dropdown">
+          
+
+          <ul class="dropdown-menu-user">
+              <li><a href="/src/pages/user/profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a></li>
+              <li><a href="/src/pages/shop/cart.html"><i class="fa-solid fa-box"></i> Đơn hàng</a></li>
+              <li><a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i> sản phẩm yêu thích</a></li>
+              <li><a href="/src/pages/workshop/events.html"><i class="fa-solid fa-calendar-check"></i> Sự kiện đã tham gia</a></li>
+              <li class="logout"><a href="#" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a></li>
+          </ul>
+      </div>
+  </div>
+
+</div>
+        </div>
+    </div>
+</header>
 
 <main class="contact">
     <section class="contact__container">
@@ -27,7 +176,7 @@
                         id="name"
                         class="contact__input"
                         placeholder="Nhập họ và tên của bạn"
-                        required
+                        
                 />
             </div>
 
@@ -38,7 +187,7 @@
                         id="email"
                         class="contact__input"
                         placeholder="Nhập email của bạn"
-                        required
+                        
                 />
             </div>
 
@@ -49,7 +198,7 @@
                         id="subject"
                         class="contact__input"
                         placeholder="Nhập chủ đề liên hệ"
-                        required
+                        
                 />
             </div>
 
@@ -60,7 +209,7 @@
                         class="contact__textarea"
                         rows="5"
                         placeholder="Nhập nội dung bạn muốn gửi..."
-                        required
+                        
                 ></textarea>
             </div>
 
@@ -69,10 +218,90 @@
     </section>
 </main>
 
-<!-- Footer -->
-<div id="footer"></div>
 
+
+<!--footer-->
+<footer class="footer">
+
+    <div class="container  footer__container">
+        <div class="footer__col footer__logo">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/src/assets/images/logo.png" alt="logo" style="width: 15rem; height: auto; object-fit: contain; display: block; 
+                        margin: auto;">
+                </a>
+            </div>
+            <div class="footer__icon">
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-amazon"></i> </a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-twitter"></i> </a>
+            </div>
+            <p>
+                3.T STEMSHOP – Nơi mang đến dụng cụ học tập STEM giúp trẻ em vừa học vừa chơi, <br>
+                phát triển tư duy logic, khả năng sáng tạo và niềm đam mê khám phá khoa học từ sớm.
+            </p>
+        </div>
+        <!-- CỘT LIÊN KẾT NHANH -->
+        <div class="footer__col footer__quickLinks">
+            <h3>Liên kết nhanh</h3>
+            <ul>
+                <ul>
+                    <ul>
+                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="/src/pages/main/about.html">Giới thiệu</a></li>
+                        <li><a href="/src/pages/shop/shop.html">Cửa hàng</a></li>
+                        <li><a href="/src/pages/content/blog.html">Bài viết</a></li>
+                        <li><a href="/src/pages/main/contact.html">Liên hệ</a></li>
+
+                    </ul>
+
+                </ul>
+
+
+            </ul>
+        </div>
+        <!-- CỘT HỖ TRỢ KHÁCH HÀNG -->
+
+        <div class="footer__col footer__customerSupport">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="/src/pages/main/faq.html">Câu hỏi thường gặp</a></li>
+                <li><a href="/src/pages/main/policy.html">Chính sách bảo hành</a></li>
+                <li><a href="/src/pages/main/terms.html">Điều khoản sử dụng</a></li>
+            </ul>
+        </div>
+        <!-- CỘT LIÊN HỆ -->
+        <div class="footer__col footer__contact">
+            <h3>Liên hệ</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Trường Đại học Nông Lâm TP.HCM</p>
+            <p><i class="fa-solid fa-envelope"></i> shopstemteam22@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +84 123 456 789</p>
+        </div>
+        <!-- CỘT NHẬN THÔNG BÁO -->
+        <div class="footer__col footer__contact-sendus">
+            <h3>Nhận thông báo ngay!</h3>
+            <p>Nhập email của bạn để nhận các chương trình mới nhất từ STEMSHOP!</p>
+            <form action="" class="footer__newsletter">
+                <input type="email" placeholder="Nhập email của bạn!">
+                <button type="submit">Gửi ngay</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
+    </div>
+</footer>
+<script src="/src/assets/js/header.js"></script>
 <script src="../../assets/js/components.js"></script>
 <script src="../../assets/js/main.js"></script>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // không reload
+        window.location.href = "../../../index.html"; // quay về trang chủ
+    });
+</script>
 </body>
 </html>

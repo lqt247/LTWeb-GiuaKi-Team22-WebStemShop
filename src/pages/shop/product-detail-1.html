@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/pages/product-detail.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+   <!--HEADER-->
+<header class="header">
+    <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
+    <div class="header__first">
+        <div class="container">
+            <div class="header__top-left">
+                <a href="https://maps.app.goo.gl/nj1KfxS8ajpDxTni6" target="_blank">
+                    <span><i class="fa-solid fa-location-dot"></i> Trường Đại Học Nông Lâm TPHCM</span></a>
+                <a href="" target="_blank"><span><i class="fa-solid fa-envelope"></i>
+                        shopstemteam22@gmail.com</span>
+                </a>
+            </div>
+            <div class="header__top-right">
+                <div class="header__phone-top">
+                    <a href="" target="_blank"><span><i class="fa-solid fa-phone"></i>
+                            +84 123456789</span>
+                    </a>
+                </div>
+                <div class="header_icon-top">
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-amazon"></i> </a>
+                    <a href="" class="header__icon-right"> <i class="fa-brands fa-twitter"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PHẦN DƯỚI:  menu + user -->
+    <div class="header__end">
+        <div class="container">
+            <div class="header__end-left">
+                <div class="header__logo">
+                    <a href="/index.html"> <img src="/src/assets/images/logo.png" alt="logo"> </a>
+                </div>
+                <div class="header__nav">
+
+                    <!--NAV-->
+
+                    <nav class="nav-content">
+                        <ul class="nav__list">
+
+                            <!-- Trang chủ -->
+
+                            <li class="nav__item"><a href="/index.html">Trang chủ</a></li>
+
+                            <!-- Giới thiệu -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/main/about.html">Giới thiệu <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/src/pages/about_info/about-stem.html">Về STEMSHOP</a></li>            
+                                    <li><a href="/src/pages/about_info/mission.html">Sứ mệnh & Tầm nhìn</a></li>
+                                    <li><a href="/src/pages/about_info/guide.html">Tài liệu hướng dẫn</a></li>
+                                      <li><a href="/src/pages/about_info/about-group.html">Nhóm phát triển</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Cửa hàng -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/shop/shop.html">Cửa hàng <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+                                    <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
+                                    <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
+                                    <li><a href="/src/pages/shop/checkout.html">Thanh toán</a></li>
+                                </ul>
+                            </li>
+                            <!-- Bài viết -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/content/blog.html">Bài viết <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/src/pages/content/blog-category.html">Danh mục bài viết</a></li>                             
+                                </ul>
+                            </li>
+
+                            <!-- Sự kiện -->
+                            <li class="nav__item dropdown">
+                                <a href="/src/pages/workshop/events.html">Sự kiện <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                            
+                                    <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
+                                    <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                    <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
+                                </ul>
+                            </li>
+
+
+                            <!-- Liên hệ -->
+                            <li class="nav__item"><a href="/src/pages/main/contact.html">Liên hệ</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="header__end-right">
+                <div class="header__shop">
+                    <a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                    <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="header__user">
+                    <a href="/src/pages/user/sign-in.html"><span><i class="fas fa-user"></i> Đăng nhập </span></a>
+                    <span class="divider">|</span>
+                    <a href="/src/pages/user/sign-up.html"><span> <i class="fas fa-pencil-alt"></i> Đăng ký </span></a>
+                </div>
+            </div>
+
+<div class="header__end-right">
+
+  <div class="header__shop">
+    <a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+    <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <!-- KHI CHƯA ĐĂNG NHẬP -->
+  <div class="header__user header__user-login">
+      <a href="/src/pages/user/sign-in.html">Đăng nhập</a>
+      <span class="divider">|</span>
+      <a href="/src/pages/user/sign-up.html">Đăng ký</a>
+  </div>
+
+  <!-- KHI ĐÃ ĐĂNG NHẬP -->
+  <div class="header__user header__user-logged">
+      
+      <i class="fa-solid fa-circle-user user-avatar-icon"></i>
+      <span class="user-short-name">Bé Minh Anh</span>
+      <div class="user-dropdown">
+          
+
+          <ul class="dropdown-menu-user">
+              <li><a href="/src/pages/user/profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a></li>
+              <li><a href="/src/pages/shop/cart.html"><i class="fa-solid fa-box"></i> Đơn hàng</a></li>
+              <li><a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i> sản phẩm yêu thích</a></li>
+              <li><a href="/src/pages/workshop/events.html"><i class="fa-solid fa-calendar-check"></i> Sự kiện đã tham gia</a></li>
+              <li class="logout"><a href="#" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a></li>
+          </ul>
+      </div>
+  </div>
+
+</div>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="back">
+            <a href="../../../index.html">Trang chủ</a>
+            <span>/</span>
+            <a href="shop.html">Cửa hàng</a>
+            <span>/</span>
+            <a href="#">Chi Tiết Sản Phẩm</a>
+        </div>
+
+        <div class="product-detail" id="product-detail">
+            <div class="product-images">
+                <img src="../../assets/images/shop/xe-tap-di-da-nang.jpg" alt="xe-tap-di-da-nang" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="../../assets/images/shop/xe-tap-di-da-nang.jpg" alt="xe-tap-di-da-nang">
+                    <img src="../../assets/images/product-detail/product1.1.png" alt="">
+                    <img src="../../assets/images/product-detail/product1.2.png" alt="">
+                    <img src="../../assets/images/product-detail/product1.3.png" alt="">
+
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Đồ Chơi Xe Tập Đi Đa Năng Có Nhạc Và Đèn Cho Bé VTECH 80-505600</h1>
+                <div class="product-price"> 1.779.000 Đ</div>
+                <div class="product-description">
+                    <ul>
+                        <li><i class="fa-solid fa-check-double"></i> Hàng chính hãng</li>
+                        <li><i class="fa-solid fa-check-double"></i> Miễn phí giao hàng toàn quốc đơn trên 500k</li>
+                        <li><i class="fa-solid fa-check-double"></i> Giao hàng hỏa tốc 4 tiếng</li>
+                        <li><i class="fa-solid fa-check-double"></i> Hỗ trợ trả góp đơn hàng từ 3 triệu. <a
+                                href="chinh-sach-tra-gop.html" target="_blank">Xem chi tiết</a></li>
+                    </ul>
+                </div>
+                <div class="product-actions">
+                    <button class="add-to-cart">
+                        Thêm vào giỏ hàng <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                    <button class="wishlist-btn">
+                        <i class="fa-solid fa-heart" style="color:#FF6C80"></i>
+                    </button>
+                </div>
+                <div class="product-meta">
+                    <p><strong>Thương hiệu:</strong> VTECH</p>
+                    <p><strong>ID Sản phẩm:</strong> 1</p>
+                    <!-- Thêm thông tin khác nếu cần -->
+                </div>
+            </div>
+        </div>
+
+        <div class="productDecription">
+            <!-- <h2>Mô tả sản phẩm</h2>
+            <div class="productDecription__content">
+                <h2>Đồ Chơi Xe Tập Đi Đa Năng Có Nhạc Và Đèn Cho Bé VTECH 80-505600</h2>
+                <p>Đồ Chơi Xe Tập Đi Đa Năng Có Nhạc Và Đèn Cho Bé VTech là món đồ chơi 2 trong 1 thông minh dành cho bé
+                    từ 9 tháng tuổi trở lên. Sản phẩm được thiết kế chắc chắn, an toàn, giúp bé vừa học vừa chơi trong
+                    giai đoạn chập chững biết đi. Phần bảng điều khiển phía trước có thể tháo rời, cho phép bé chơi khi
+                    đang ngồi hoặc khi tập đi.</p>
+                <h2>Bảng trò chơi được trang bị nhiều chi tiết sinh động như:</h2>
+                <ul>
+                    <li> Bàn phím âm nhạc với các phím số, chữ cái, hình dạng và con vật.</li>
+                    <li>Bánh răng xoay, điện thoại đồ chơi, cửa mở ra đóng lại, và các nút bấm phát sáng.</li>
+                    <li>Hệ thống âm thanh vui nhộn với hơn 100 bài hát, giai điệu và cụm từ học tập giúp bé phát triển
+                        kỹ năng ngôn ngữ.</li>
+                    <li>Tay cầm có độ cao vừa phải, bánh xe chống trượt giúp bé tập đi an toàn.</li>
+                </ul>
+                <h2>Lợi ích nổi bật:</h2>
+                <ul>
+                    <li> Phát triển trí tuệ & khả năng nhận biết: Bé học được màu sắc, con số, chữ cái, hình khối và tên
+                        các con vật thông qua trò chơi tương tác.</li>
+                    <li>Rèn luyện vận động thô: Tay cầm vững chắc và bánh xe ổn định giúp bé tự tin tập đi, phát triển
+                        cơ chân và khả năng giữ thăng bằng.</li>
+                    <li>Kích thích giác quan: Âm thanh, đèn sáng, và bề mặt xúc giác đa dạng giúp kích thích thính giác,
+                        thị giác và xúc giác của bé.</li>
+                    <li>Phát triển kỹ năng vận động tinh: Các nút bấm, bánh răng, và chi tiết chuyển động giúp bé rèn sự
+                        khéo léo của bàn tay.</li>
+                    <li>Khả năng tư duy và phản xạ: Bé học cách khám phá và phản hồi lại âm thanh, hình ảnh – giúp tăng
+                        cường khả năng tư duy logic và phản xạ nhanh.</li>
+                    <li>Sử dụng lâu dài: Có thể dùng như bàn chơi khi bé còn nhỏ, và chuyển sang xe tập đi khi bé bắt
+                        đầu đứng vững – tiết kiệm và đa năng.</li>
+                </ul>
+            </div> -->
+
+            <!-- mô tả sp -->
+            <div id="decription-product" class="tabContent">
+                <h2>Mô tả sản phẩm</h2>
+                <p>Đồ Chơi Xe Tập Đi Đa Năng Có Nhạc Và Đèn Cho Bé VTech là món đồ chơi 2 trong 1 thông minh dành cho bé
+                    từ 9 tháng tuổi trở lên. Sản phẩm được thiết kế chắc chắn, an toàn, giúp bé vừa học vừa chơi trong
+                    giai đoạn chập chững biết đi. Phần bảng điều khiển phía trước có thể tháo rời, cho phép bé chơi khi
+                    đang ngồi hoặc khi đi.</p>
+            </div>
+            <!-- bảng trò chơi -->
+            <div id="table-game" class="tabContent">
+                <h2>Bảng trò chơi được trang bị nhiều chi tiết sinh động như:</h2>
+                <ol>
+                    <li> <span>1</span>Bàn phím âm nhạc với các phím số, chữ cái, hình dạng và con vật.</li>
+                    <li> <span>2</span>Bánh răng xoay, điện thoại đồ chơi, cửa mở ra đóng lại, và các nút bấm phát sáng.
+                    </li>
+                    <li> <span>3</span>Hệ thống âm thanh vui nhộn với hơn 100 bài hát, giai điệu và câu từ học tập giúp
+                        bé phát triển
+                        kỹ năng ngôn ngữ.</li>
+                    <li> <span>4</span>Tay cầm có độ cao vừa phải, bánh xe chống trượt giúp bé tập đi an toàn.</li>
+                </ol>
+            </div>
+            <!-- lợi ích nổi bật -->
+            <div id="benefit" class="tabContent">
+                <h2>Lợi ích nổi bật:</h2>
+                <p><i class="fa-solid fa-check"></i> Phát triển trí tuệ & khả năng nhận biết: Bé học được màu sắc, con
+                    số, chữ cái, hình khối và tên các con vật thông qua trò chơi tương tác.</p>
+                <p><i class="fa-solid fa-check"></i> Rèn luyện vận động thô: Tay cầm vững chắc và bánh xe ổn định giúp
+                    bé tự tin tập đi, phát triển cơ chân và khả năng giữ thăng bằng.</p>
+                <p><i class="fa-solid fa-check"></i> Kích thích giác quan: Âm thanh, đèn sáng, và bề mặt xúc giác đa
+                    dạng giúp kích thích thính giác, thị giác và xúc giác của bé.</p>
+                <p><i class="fa-solid fa-check"></i> Phát triển kỹ năng vận động tinh: Các nút bấm, bánh răng, và chi
+                    tiết chuyển động giúp bé rèn sự khéo léo của bàn tay.</p>
+                <p><i class="fa-solid fa-check"></i> Khả năng tư duy và phân xạ: Bé học cách khám phá và phân hồi âm
+                    thanh, hình ảnh – giúp tăng cường khả năng tư duy logic và phân xạ nhanh.</p>
+                <p><i class="fa-solid fa-check"></i> Sử dụng lâu dài: Có thể dùng như bàn chơi khi bé còn nhỏ, và chuyển
+                    sang xe tập đi khi bé bắt đầu dùng vững – tiết kiệm và đa năng.</p>
+            </div>
+        </div>
+
+        <div class="trust-badge__container">
+            <ul>
+                <li>
+                    <img src="../../assets/images/product-detail/chinh-hang.png" alt="">
+                    <p>Sản phẩm chính hãng 100%</p>
+                </li>
+                <li>
+                    <img src="../../assets/images/product-detail/an-toan.png" alt="">
+                    <p>Nhựa an toàn cho trẻ em</p>
+                </li>
+                <li>
+                    <img src="../../assets/images/product-detail/giao-hang.png" alt="">
+                    <p>Miễn phí giao hàng đơn từ 500K</p>
+                </li>
+                <li>
+                    <img src="../../assets/images/product-detail/hoa-toc.png" alt="">
+                    <p>Giao hàng hỏa tốc 4 tiếng</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="evaluate-product">
+            <h2>Đánh giá sản phẩm</h2>
+            <div class="evaluate-product__container">
+                <div class="evaluate-product__star">
+                    <div class="evaluate-product__star__count">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rate">0.0 </span>
+                        <span style="margin-left: 10px;">lượt đánh giá</span>
+                    </div>
+                    <div class="evaluate-product__star__process">
+                        <div class="rating-summary">
+                            <div class="rating-row">
+                                <div class="rating-label">5 ★</div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 70%;"></div>
+                                </div>
+                                <div class="rating-count">125</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="rating-label">4 ★</div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 20%;"></div>
+                                </div>
+                                <div class="rating-count">36</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="rating-label">3 ★</div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 5%;"></div>
+                                </div>
+                                <div class="rating-count">9</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="rating-label">2 ★</div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 5%;"></div>
+                                </div>
+                                <div class="rating-count">9</div>
+                            </div>
+
+                            <div class="rating-row">
+                                <div class="rating-label">1 ★</div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 0%;"></div>
+                                </div>
+                                <div class="rating-count">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="evaluate-product__comment">
+                    <p>Chưa có bình luận nào, hãy chia sẽ đánh giá của bạn nhé.</p>
+                    <button>Viết đánh giá</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+<!--FOOTER-->
+<!-- Wave Divider -->
+<div class="footer-wave">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path fill="rgba(236,117,173,1)" d="M0,50 C80,80 160,30 240,60 C320,90 400,40 480,70 C560,90 640,50 720,80 C800,90 880,50 960,80 C1040,90 1120,50 1200,70 C1280,90 1360,60 1440,80 L1440,100 L0,100 Z"/>
+  </svg>
+</div>
+
+<!--footer-->
+<footer class="footer">
+
+    <div class="container  footer__container">
+        <div class="footer__col footer__logo">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/src/assets/images/logo.png" alt="logo" style="width: 15rem; height: auto; object-fit: contain; display: block; 
+                        margin: auto;">
+                </a>
+            </div>
+            <div class="footer__icon">
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-amazon"></i> </a>
+                <a href="" class="header__icon-right"> <i class="fa-brands fa-twitter"></i> </a>
+            </div>
+            <p>
+                3.T STEMSHOP – Nơi mang đến dụng cụ học tập STEM giúp trẻ em vừa học vừa chơi, <br>
+                phát triển tư duy logic, khả năng sáng tạo và niềm đam mê khám phá khoa học từ sớm.
+            </p>
+        </div>
+        <!-- CỘT LIÊN KẾT NHANH -->
+        <div class="footer__col footer__quickLinks">
+            <h3>Liên kết nhanh</h3>
+            <ul>
+                <ul>
+                    <ul>
+                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="/src/pages/main/about.html">Giới thiệu</a></li>
+                        <li><a href="/src/pages/shop/shop.html">Cửa hàng</a></li>
+                        <li><a href="/src/pages/content/blog.html">Bài viết</a></li>
+                        <li><a href="/src/pages/main/contact.html">Liên hệ</a></li>
+
+                    </ul>
+
+                </ul>
+            </ul>
+        </div>
+        <!-- CỘT HỖ TRỢ KHÁCH HÀNG -->
+
+        <div class="footer__col footer__customerSupport">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="/src/pages/main/faq.html">Câu hỏi thường gặp</a></li>
+                <li><a href="/src/pages/main/policy.html">Chính sách bảo hành</a></li>
+                <li><a href="/src/pages/main/terms.html">Điều khoản sử dụng</a></li>
+            </ul>
+        </div>
+        <!-- CỘT LIÊN HỆ -->
+        <div class="footer__col footer__contact">
+            <h3>Liên hệ</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Trường Đại học Nông Lâm TP.HCM</p>
+            <p><i class="fa-solid fa-envelope"></i> shopstemteam22@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +84 123 456 789</p>
+        </div>
+        <!-- CỘT NHẬN THÔNG BÁO -->
+        <div class="footer__col footer__contact-sendus">
+            <h3>Nhận thông báo ngay!</h3>
+            <p>Nhập email của bạn để nhận các chương trình mới nhất từ STEMSHOP!</p>
+            <form action="" class="footer__newsletter">
+                <input type="email" placeholder="Nhập email của bạn!">
+                <button type="submit">Gửi ngay</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="/src/assets/js/header.js"></script>
+    <script src="../../assets/js/components.js"></script>
+    <script type="module" src="../../assets/js/pages/product-detail.js"></script>
+</body>
+
+</html>

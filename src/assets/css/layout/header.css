@@ -357,3 +357,96 @@ color: #ff46d4;
   color: #ccc;
   font-weight: 300;
 }
+
+/* DROPDOWN USER (Hồ sơ / Đơn hàng / Bài viết yêu thích / Sự kiện / Đăng xuất) */
+
+.header__user-logged {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #fff;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+    z-index: 999;
+}
+
+/* Hover thì dropdown hiện giống menu chính */
+.header__user:hover .user-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Tên user */
+.user-short-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  transition: 
+    color 0.3s ease,
+    transform 0.25s ease;
+}
+/* user hover */
+.user-short-name:hover {
+  color: #ff6ec7; 
+  transform: rotate(-5deg) scale(1.15); 
+  text-shadow: 0px 3px 6px rgba(255, 182, 193, 0.6);
+}
+/* Danh sách item */
+.dropdown-menu-user {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu-user li {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.dropdown-menu-user li:last-child {
+    border-bottom: none;
+}
+
+/* Item */
+.dropdown-menu-user li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    border-radius: 10px;
+}
+
+/* Hover */
+.dropdown-menu-user li a:hover {
+    background-color: #fff1f7;
+    color: #ff4fa3;
+    padding-left: 22px;
+}
+
+/*-----CSS Avatar-----*/
+.user-avatar-icon {
+    font-size: 28px;
+    color: #ff6fa9; 
+    cursor: pointer;
+    margin-right: 8px;
+}
+

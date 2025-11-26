@@ -34,17 +34,44 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // === Hàm đánh dấu menu đang active ===
+// function highlightActiveLink() {
+//   const currentPath = window.location.pathname.split("/").pop() || "index.html";
+
+//   document.querySelectorAll(".nav__item a").forEach(a => {
+//     a.classList.remove("active");
+
+//     const linkPath = a.getAttribute("href").split("/").pop();
+//     if (linkPath === currentPath) {
+//       a.classList.add("active");
+//     }
+//   });
+// }
 function highlightActiveLink() {
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
+  const currentPath = window.location.pathname.replace(/\\/g, "/");
 
+  // Xóa tất cả class active cũ
+  document.querySelectorAll(".nav__item a").forEach(a => a.classList.remove("active"));
+
+  // Tìm link con khớp nhất với URL hiện tại
+  let matchedLink = null;
   document.querySelectorAll(".nav__item a").forEach(a => {
-    a.classList.remove("active");
-
-    const linkPath = a.getAttribute("href").split("/").pop();
-    if (linkPath === currentPath) {
-      a.classList.add("active");
+    const href = a.getAttribute("href");
+    if (currentPath.endsWith(href) || currentPath.includes(href.replace("/index.html", ""))) {
+      matchedLink = a;
     }
   });
+
+  // Nếu tìm được link phù hợp
+  if (matchedLink) {
+    matchedLink.classList.add("active");
+
+    // Nếu link con nằm trong dropdown -> active luôn thằng cha
+    const parentDropdown = matchedLink.closest(".dropdown");
+    if (parentDropdown) {
+      const parentLink = parentDropdown.querySelector(":scope > a");
+      if (parentLink) parentLink.classList.add("active");
+    }
+  }
 }
 
 // Gọi highlightActiveLink ngay sau khi load header
