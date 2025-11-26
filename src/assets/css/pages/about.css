@@ -19,6 +19,7 @@
   font-weight: bold;
 }
 
+
 /* container chính */
 .about-container {
   max-width: 1200px;
@@ -29,6 +30,7 @@
   justify-content: space-between;
   gap: 60px;
 }
+
 /*====BACK====*/
 .back {
     background-color: #f6f5f4;
@@ -41,6 +43,7 @@
     color: #a1a0a0;
     margin-left: 20px;
 }
+
 
 
 /* ====== ẢNH CHÍNH ====== */
@@ -168,6 +171,7 @@
   font-weight: 600;
   font-size: 15px;
   margin-bottom: 10px;
+
 }
 
 .section__about-mission .about-content h1 {

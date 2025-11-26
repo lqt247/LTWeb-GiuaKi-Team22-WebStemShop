@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tài liệu Workshop - STEMShop</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án Workshop - STEMShop</title>
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <link rel="stylesheet" href="../../assets/css/pages/materials.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
 
-  <body>
+<body>
+
+
 <!--HEADER-->
 <header class="header">
     <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
@@ -110,10 +110,12 @@
                                 <ul class="dropdown-menu">
 
 
+
                                   
 
                                     <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
-                                    <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                    <li><a href="/src/pages/workshop/materials.html">Dự Án Workshop</a></li>
+
                                     <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
                                 </ul>
                             </li>
@@ -135,11 +137,12 @@
     <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
   </div>
   <!-- KHI CHƯA ĐĂNG NHẬP -->
-  <div class="header__user header__user-login">
+
+  <!-- <div class="header__user header__user-login">
       <a href="/src/pages/user/sign-in.html">Đăng nhập</a>
       <span class="divider">|</span>
       <a href="/src/pages/user/sign-up.html">Đăng ký</a>
-  </div>
+  </div> -->
 
   <!-- KHI ĐÃ ĐĂNG NHẬP -->
   <div class="header__user header__user-logged">
@@ -164,184 +167,159 @@
     </div>
 </header>
 
-    <main class="materials">
-      <h1 class="materials__title">
-        <i class="fa-solid fa-book-open"></i> Tài liệu Workshop STEM
-      </h1>
-      <p class="materials__desc">
-        Thư viện tài liệu học tập vui nhộn giúp bé khám phá khoa học, kỹ thuật và sáng tạo cùng STEMShop!
-      </p>
 
-      <div class="materials__layout">
-        <!-- CỘT TRÁI: WORKSHOP GẦN ĐÂY -->
-        <aside class="materials__sidebar">
-          <h2 class="sidebar__title"> Workshop gần đây</h2>
+<main class="materials container">
 
-          <div class="sidebar__item">
-            <img src="../../assets/images/workshop/robot-mini.jpg" alt="Robot mini" />
-            <div class="sidebar__info">
-              <p class="sidebar__name">Học làm Robot mini</p>
-              <p class="sidebar__date">26/10/2025</p>
-            </div>
-          </div>
+    <!-- SIDEBAR -->
+    <aside class="materials__sidebar">
+        
+        <!-- DANH MỤC -->
+        <div class="sidebar__section">
+            <h3 class="sidebar__title">Danh mục Dự Án</h3>
+            <ul class="sidebar__list">
+                <li><a href="#" class="active">Tất cả</a></li>
+                <li><a href="#">Arduino</a></li>
+                <li><a href="#">Module</a></li>
+                <li><a href="#">Rio</a></li>
+                <li><a href="#">XBot</a></li>
+                <li><a href="#">YoLo:Bit</a></li>
+            </ul>
+        </div>
 
-          <div class="sidebar__item">
-            <img src="../../assets/images/workshop/science-fun.jpg" alt="Thí nghiệm vui" />
-            <div class="sidebar__info">
-              <p class="sidebar__name">Thí nghiệm Khoa học Vui</p>
-              <p class="sidebar__date">20/10/2025</p>
-            </div>
-          </div>
+        <!-- WORKSHOP HOT GẦN ĐÂY -->
+<div class="sidebar__section">
+    <h3 class="sidebar__title">Workshop hot gần đây</h3>
 
-          <div class="sidebar__item">
-            <img src="../../assets/images/workshop/space.jpg" alt="Không gian" />
-            <div class="sidebar__info">
-              <p class="sidebar__name">Khám phá Không gian</p>
-              <p class="sidebar__date">15/10/2025</p>
-            </div>
-          </div>
-        </aside>
+    <div class="recent">
+        <img src="">
+        <div class="recent__info">
+            <p></p>
+            <span class="views"></span>
+        </div>
+    </div>
 
-        <!-- CỘT PHẢI: DANH SÁCH TÀI LIỆU -->
-        <section class="materials__grid">
-          <!-- 9 tài liệu mẫu -->
-          <article class="material__card">
-            <img src="../../assets/images/workshop/robot-mini.jpg" alt="Robot mini" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-robot"></i> Lắp ráp Robot mini
-              </h3>
-              <p class="material__text">
-                Hướng dẫn chi tiết giúp bé tự tay tạo nên robot biết di chuyển và phát sáng.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
+    <div class="recent">
+        <img src="">
+        <div class="recent__info">
+            <p></p>
+            <span class="views"></span>
+        </div>
+    </div>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/science-fun.jpg" alt="Khoa học vui" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-flask-vial"></i> Khoa học vui
-              </h3>
-              <p class="material__text">
-                Các thí nghiệm nhỏ gọn, dễ làm, giúp bé học nguyên lý khoa học một cách tự nhiên.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
+    <div class="recent">
+        <img src="">
+        <div class="recent__info">
+            <p></p>
+            <span class="views"></span>
+        </div>
+    </div>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/space.jpg" alt="Không gian" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-meteor"></i> Khám phá Không gian
-              </h3>
-              <p class="material__text">
-                Tài liệu giúp bé hiểu về các hành tinh, dải ngân hà và phi hành gia.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
+    <div class="recent">
+        <img src="">
+        <div class="recent__info">
+            <p></p>
+            <span class="views"></span>
+        </div>
+    </div>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/engineer.jpg" alt="Kỹ sư nhí" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-gears"></i> Kỹ sư nhí sáng tạo
-              </h3>
-              <p class="material__text">
-                Cùng bé thiết kế cầu, xe và máy móc đơn giản từ đồ tái chế.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
+    <div class="recent">
+        <img src="">
+        <div class="recent__info">
+            <p></p>
+            <span class="views"></span>
+        </div>
+    </div>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/biology.jpg" alt="Sinh học" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-seedling"></i> Khám phá Sinh học
-              </h3>
-              <p class="material__text">
-                Học về cây cối, động vật và sự sống qua trò chơi quan sát tự nhiên.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
+    <div class="recent">
+        <img src="">
+        <div class="recent__info">
+            <p></p>
+            <span class="views"></span>
+        </div>
+    </div>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/math.jpg" alt="Toán vui" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-square-root-variable"></i> Toán vui
-              </h3>
-              <p class="material__text">
-                Tài liệu học toán qua trò chơi giúp bé luyện tư duy logic và sáng tạo.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
+</div>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/chemistry.jpg" alt="Hóa học" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-vial"></i> Hóa học diệu kỳ
-              </h3>
-              <p class="material__text">
-                Các phản ứng hóa học an toàn, sinh động cho bé từ 6 tuổi trở lên.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/electric.jpg" alt="Điện cơ bản" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-bolt"></i> Học về Điện cơ bản
-              </h3>
-              <p class="material__text">
-                Tạo mạch điện đơn giản và tìm hiểu nguyên lý hoạt động an toàn cho trẻ nhỏ.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
+    </aside>
 
-          <article class="material__card">
-            <img src="../../assets/images/workshop/recycle.jpg" alt="Tái chế" />
-            <div class="material__info">
-              <h3 class="material__title">
-                <i class="fa-solid fa-recycle"></i> Tái chế sáng tạo
-              </h3>
-              <p class="material__text">
-                Dạy bé cách biến rác thành đồ chơi hoặc vật dụng hữu ích trong đời sống.
-              </p>
-              <a href="materials-detail.html" class="material__btn">
-                <i class="fa-solid fa-eye"></i> Xem chi tiết
-              </a>
-            </div>
-          </article>
-        </section>
-      </div>
-    </main>
+    <!-- CONTENT MAIN -->
+    <section class="materials__content">
+
+        <h1 class="materials__heading">Dự Án Stem Workshop</h1>
+
+        <div class="materials__grid">
+
+            <!-- 9 tài liệu mẫu -->
+            <!-- ITEM -->
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p1" data-category="arduino" >
+              <img src="../../assets/images/workshop/materials/p1.png">
+              <h3>Chế Độ Deep Sleep trên ESCP32 và Wake Up Sources </h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p2" data-category="module" >
+              <img src="https://ohstem.vn/wp-content/uploads/2024/02/huong-dan-lap-trinh-nhieu-man-hinh-i2c-voi-yolo-uno-ohstem-avt.png">
+              <h3>Hướng Dẫn Sử dụng nhiều màn hình I2C với Yolo UNO</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p3" data-category="xbot">
+              <img src="https://ohstem.vn/wp-content/uploads/2021/09/Robot-ne-vat-can.jpg">
+              <h3>Làm robot tránh vật cản</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p4" data-category="arduino">
+              <img src="https://ohstem.vn/wp-content/uploads/2021/02/B46.png">
+              <h3>ESP32 Giao Tiếp I2C Sử Dụng Arduino IDE</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p5" data-category="xbot">
+              <img src="https://ohstem.vn/wp-content/uploads/2021/09/lap-trinh-LED-doi-mau.jpg">
+              <h3>Lập trình LED đổi màu</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p6" data-category="yolobit">
+              <img src="https://ohstem.vn/wp-content/uploads/2023/10/piano-dien-1.jpg">
+              <h3>Đàn piano điện</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p7" data-category="module">
+              <img src="https://ohstem.vn/wp-content/uploads/2022/11/lap-trinh-encoder-de-dieu-khien-quat.jpg">
+              <h3>Lập trình Encoder để điều khiển quạt với Yolo:Bit</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p8" data-category="rio">
+              <img src="https://ohstem.vn/wp-content/uploads/2024/10/ban-song-o-dau-5.png">
+              <h3>Bạn sống ở đâu?</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+            <a href="/src/pages/workshop/materials-detail.html?id=p3" class="material__item" data-id="p9" data-category="rio">
+              <img src="https://ohstem.vn/wp-content/uploads/2024/10/Rio-di-tim-thu-lac-6.png">
+              <h3>Rio đi tìm thú lạc</h3>
+              <div class="item__stats"><span><i class="fa-regular fa-eye"></i> <span class="views">0</span></span></div>
+            </a>
+
+
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+
+    </section>
+</main>
+
 
 <!--FOOTER-->
 <!-- Wave Divider -->
@@ -424,7 +402,11 @@
         <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
     </div>
 </footer>
-      <script src="../../assets/js/header.js"></script>
-    <script src="../../assets/js/components.js"></script>
-  </body>
+
+<script src="../../assets/js/pages/materials.js"></script>
+<script src="../../assets/js/components.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+
+
 </html>

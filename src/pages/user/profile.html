@@ -104,12 +104,9 @@
                                 <a href="/src/pages/workshop/events.html">Sự kiện <i
                                         class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
-
-
-                                  
-
+                           
                                     <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
-                                    <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                    <li><a href="/src/pages/workshop/materials.html">Dự Án Workshop</a></li>
                                     <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
                                 </ul>
                             </li>
@@ -173,6 +170,10 @@
         <p><i class="fa-solid fa-envelope"></i> minh.anh@example.com</p>
         <p><i class="fa-solid fa-cake-candles"></i> Ngày sinh: 12/08/2017</p>
         <p><i class="fa-solid fa-location-dot"></i> TP. Hồ Chí Minh</p>
+
+        <p><i class="fa-solid fa-user-shield"></i> Phụ huynh: Nguyễn Văn A</p>
+        <p><i class="fa-solid fa-phone"></i> SĐT phụ huynh: 0901 234 567</p>
+
       </div>
     </section>
 
@@ -235,27 +236,7 @@
       </div>
     </section>
 
-    <!-- Bài viết đã theo dõi -->
-    <section class="profile__blogs">
-      <h3><i class="fa-solid fa-heart"></i> Bài viết đã theo dõi</h3>
-      <div class="blogs__list">
-        <article class="blog__item">
-          <img src="../../assets/images/blog/robot-blog.jpg" alt="Robot Blog" />
-          <div class="blog__info">
-            <h4><a href="../page/blog-detail.html">5 Lý do vì sao nên cho bé học lập trình sớm</a></h4>
-            <p><i class="fa-solid fa-calendar-day"></i> 12/10/2025</p>
-          </div>
-        </article>
 
-        <article class="blog__item">
-          <img src="../../assets/images/blog/creative-play.jpg" alt="Chơi sáng tạo" />
-          <div class="blog__info">
-            <h4><a href="../page/blog-detail.html">Chơi sáng tạo giúp bé phát triển tư duy STEM</a></h4>
-            <p><i class="fa-solid fa-calendar-day"></i> 02/10/2025</p>
-          </div>
-        </article>
-      </div>
-    </section>
   </main>
 
 <!--FOOTER-->
@@ -339,17 +320,11 @@
         <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
     </div>
 </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const user = JSON.parse(localStorage.getItem("userInfo"));
 
-    // Nếu chưa login → đẩy về trang đăng nhập
-    if (!user) {
-        window.location.href = "/src/pages/user/sign-in.html";
-    }
-});
-</script>
-  <script src="../../assets/js/header.js"></script>
+
+
+  <script src="../../assets/js/pages/profile.js"></script>
+
   <script src="../../assets/js/components.js"></script>
 </body>
 </html>

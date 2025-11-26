@@ -1,151 +1,155 @@
-.material-detail {
-  background: #fff8fb;
-  padding: 60px 20px;
+
+.detail {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.material-detail__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.15);
-  padding: 30px;
+.detail__title {
+    font-size: 3rem;              
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    color: #ff4f95;
 }
 
-.material-detail__image img {
-  width: 400px;
-  border-radius: 16px;
-  object-fit: cover;
+.detail__meta span {
+    margin-right: 1.5rem;
+    color: #666;
+    font-size: 1.1rem;           
 }
 
-.material-detail__content {
-  flex: 1;
+.detail__cover {
+    width: 100%;
+    border-radius: 14px;
+    margin: 1rem 0 2rem 0;
 }
 
-.material-detail__title {
-  color: #ff4da6;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+.detail__section {
+    margin-bottom: 3rem;
 }
 
-.material-detail__desc {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.detail__section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ec75ad;
 }
 
-.material-detail__info {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 25px;
+.detail__section p,
+.detail__section ul li {
+    font-size: 1.15rem;          
+    line-height: 1.7;
 }
 
-.material-detail__info li {
-  margin-bottom: 8px;
-  color: #444;
-  font-size: 1rem;
+.detail__section ul {
+    padding-left: 24px;
 }
 
-.material-detail__info i {
-  color: #ff69b4;
-  margin-right: 8px;
+.code-block {
+    background: #222;
+    color: #0f0;
+    padding: 1.3rem;
+    border-radius: 10px;
+    font-size: 1.05rem;          
+    overflow-x: auto;
 }
 
-.material-detail__actions {
-  display: flex;
-  gap: 15px;
-}
-
-.btn-back,
-.btn-download {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: 0.3s;
-  font-size: 1rem;
-}
-
-.btn-back {
-  background-color: #eee;
-  color: #333;
-}
-
-.btn-back:hover {
-  background-color: #ddd;
-}
-
-.btn-download {
-  background-color: #ff69b4;
-  color: #fff;
-}
-
-.btn-download:hover {
-  background-color: #ff4da6;
-}
-
-/* Related section */
-.material-detail__related {
-  margin-top: 60px;
-  max-width: 1200px;
-  margin-inline: auto;
-}
-
-.related__title {
-  text-align: center;
-  color: #ff4da6;
-  font-size: 1.5rem;
-  margin-bottom: 30px;
+/* ========== BÀI VIẾT LIÊN QUAN ========== */
+.related h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
 }
 
 .related__list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.related__item {
-  text-align: center;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.15);
-  padding: 15px;
-  width: 200px;
-  transition: 0.3s;
-}
-
-.related__item:hover {
-  transform: translateY(-5px);
-}
-
-.related__item img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 8px;
-}
-
-.related__item p {
-  font-weight: 600;
-  color: #333;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .material-detail__container {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-  }
-
-  .material-detail__image img {
-    width: 100%;
-    max-width: 350px;
-  }
+    gap: 1.2rem;
 }
+
+.related-item {
+    display: flex;
+    gap: 1rem;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.25s;
+    border: 1px solid #eee;
+}
+
+.related-item:hover {
+    transform: translateX(6px);
+}
+
+.related-item img {
+    width: 110px;               
+    height: 85px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.related-item h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+/* ========== MỤC LỤC TỰ ĐỘNG ========== */
+html {
+    scroll-behavior: smooth;
+}
+
+.toc {
+    background: #fff4fa;
+    padding: 12px 16px;          
+    border-left: 4px solid #ff4f95;
+    margin-bottom: 20px;         
+    border-radius: 8px;
+    max-width: 260px;            
+}
+
+.toc h3 {
+    font-size: 1.35rem;         
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #d84a8f;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin: 6px 0;               
+}
+
+.toc a {
+    text-decoration: none;
+    color: #d84a8f;
+    font-size: 1.05rem;          
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Cho di động ========== */
+@media (max-width: 768px) {
+    .detail {
+        grid-template-columns: 1fr;
+    }
+
+    .detail__title {
+        font-size: 2.4rem;
+    }
+
+    .detail__section h2 {
+        font-size: 1.7rem;
+    }
+
+    .toc {
+        font-size: 1.1rem;
+    }
+}
+

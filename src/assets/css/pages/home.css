@@ -1,7 +1,9 @@
 @media (min-width: 769px) {
+
   main>section {
     padding: 50px 0;
     /* thay vì 80px */
+
   }
 }
 
@@ -983,6 +985,9 @@ main {
 }
 
 .section-newsletter__form button:hover {
+
+
   background: #222;
   color: #fff;
 }
+
