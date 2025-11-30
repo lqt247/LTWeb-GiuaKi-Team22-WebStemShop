@@ -18,7 +18,8 @@
 </head>
 
 <body>
-  <!--HEADER-->
+  
+    <!--HEADER-->
 <header class="header">
     <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
     <div class="header__first">
@@ -78,7 +79,7 @@
                             <li class="nav__item dropdown">
                                 <a href="/src/pages/shop/shop.html">Cửa hàng <i class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+                             
                                     <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
                                     <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
                                     <li><a href="/src/pages/shop/checkout.html">Thanh toán</a></li>
@@ -99,7 +100,7 @@
                                         class="fa-solid fa-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
-                                    <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                    <li><a href="/src/pages/workshop/materials.html">Dự Án Workshop</a></li>
                                     <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
                                 </ul>
                             </li>
@@ -114,17 +115,44 @@
                 </div>
             </div>
 
-            <div class="header__end-right">
-                <div class="header__shop">
-                    <a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i></a>
-                    <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+             <div class="header__end-right">
+
+                    <div class="header__shop">
+                        <a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                        <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <!-- KHI CHƯA ĐĂNG NHẬP -->
+                    <!-- <div class="header__user header__user-login">
+                        <a href="/src/pages/user/sign-in.html"><span><i class="fas fa-user"></i> Đăng nhập </span></a>
+                        <span class="divider">|</span>
+                        <a href="/src/pages/user/sign-up.html"><span> <i class="fas fa-pencil-alt"></i> Đăng ký
+                            </span></a>
+                    </div> -->
+
+                    <!-- KHI ĐÃ ĐĂNG NHẬP -->
+                    <div class="header__user header__user-logged">
+
+                        <i class="fa-solid fa-circle-user user-avatar-icon"></i>
+                        <span class="user-short-name">Bé Minh Anh</span>
+                        <div class="user-dropdown">
+
+
+                            <ul class="dropdown-menu-user">
+                                <li><a href="/src/pages/user/profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a>
+                                </li>
+                                <li><a href="/src/pages/shop/cart.html"><i class="fa-solid fa-box"></i> Đơn hàng</a>
+                                </li>
+                                <li><a href="/src/pages/shop/wishlist.html"><i class="fa-solid fa-heart"></i> sản phẩm
+                                        yêu thích</a></li>
+                                <li><a href="/src/pages/workshop/events.html"><i class="fa-solid fa-calendar-check"></i>
+                                        Sự kiện đã tham gia</a></li>
+                                <li class="logout"><a href="#" id="logoutBtn"><i
+                                            class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="header__user">
-                    <a href="/src/pages/user/sign-in.html"><span><i class="fas fa-user"></i> Đăng nhập </span></a>
-                    <span class="divider">|</span>
-                    <a href="/src/pages/user/sign-up.html"><span> <i class="fas fa-pencil-alt"></i> Đăng ký </span></a>
-                </div>
-            </div>
         </div>
     </div>
 </header>
@@ -287,7 +315,8 @@
 </footer>
 
   <!-- JS LOAD HEADER FOOTER -->
+   <script src="../../assets/js/"></script>
   <script src="../../assets/js/components.js"></script>
-  <script src="/src/assets/js/header.js"></script>
+
 </body>
 </html>

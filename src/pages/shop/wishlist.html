@@ -69,7 +69,7 @@
                                         <li><a href="/src/pages/about_info/about-stem.html">Về STEMSHOP</a></li>
                                         <li><a href="/src/pages/about_info/mission.html">Sứ mệnh & Tầm nhìn</a></li>
                                         <li><a href="/src/pages/about_info/guide.html">Tài liệu hướng dẫn</a></li>
-                                        <li><a href="/src/pages/about_info/about-group.html">Nhóm phát triển</a></li>
+                                       
                                     </ul>
                                 </li>
 
@@ -78,7 +78,7 @@
                                     <a href="/src/pages/shop/shop.html">Cửa hàng <i
                                             class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+                               
                                         <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
                                         <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
                                         <li><a href="/src/pages/shop/checkout.html">Thanh toán</a></li>
@@ -100,7 +100,7 @@
                                     <ul class="dropdown-menu">
 
                                         <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
-                                        <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                        <li><a href="/src/pages/workshop/materials.html">Dự Án Workshop</a></li>
                                         <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
                                     </ul>
                                 </li>
@@ -115,6 +115,7 @@
                     </div>
                 </div>
 
+
                 <div class="header__end-right">
 
                     <div class="header__shop">
@@ -122,12 +123,12 @@
                         <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                     <!-- KHI CHƯA ĐĂNG NHẬP -->
-                    <div class="header__user header__user-login">
+                    <!-- <div class="header__user header__user-login">
                         <a href="/src/pages/user/sign-in.html"><span><i class="fas fa-user"></i> Đăng nhập </span></a>
                         <span class="divider">|</span>
                         <a href="/src/pages/user/sign-up.html"><span> <i class="fas fa-pencil-alt"></i> Đăng ký
                             </span></a>
-                    </div>
+                    </div> -->
 
                     <!-- KHI ĐÃ ĐĂNG NHẬP -->
                     <div class="header__user header__user-logged">
@@ -153,6 +154,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
     </header>
@@ -169,8 +171,8 @@
                 <h2>Danh sách sản phẩm yêu thích <i class="fa-solid fa-heart"></i></h2>
                 <p>Bạn có <span>2</span> sản phẩm yêu thích</p>
             </div>
-            <!-- sp1 -->
             <div class="wishlist-container">
+                <!-- sp1 -->
                 <div class="wishlist-container__card ">
                     <img src="../../assets/images/shop/xe-tap-di-da-nang.jpg" alt="">
                     <div class="trash">
@@ -186,7 +188,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <h2 style="color: #FF6C80"> 1.779.000 Đ</h2>
-                    <button><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+                    <button class="btn-addToCart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 </div>
 
                 <!-- sp2 -->
@@ -205,7 +207,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <h2 style="color: #FF6C80"> 299.000 Đ</h2>
-                    <button><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+                    <button class="btn-addToCart"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</button>
                 </div>
             </div>
 
@@ -293,7 +295,7 @@
         </div>
     </footer>
 
-    <script src="/src/assets/js/header.js"></script>
+
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/pages/wishlist.js"></script>
 </body>
