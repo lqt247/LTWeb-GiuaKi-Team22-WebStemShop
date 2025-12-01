@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chi tiết tài liệu Workshop - STEMShop</title>
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-    <link rel="stylesheet" href="../../assets/css/pages/materials-detail.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Dự Án Workshop - STEMShop</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/pages/materials-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+
+
 <!--HEADER-->
 <header class="header">
     <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
@@ -74,7 +77,7 @@
                                     <li><a href="/src/pages/about_info/mission.html">Sứ mệnh & Tầm nhìn</a></li>
                                     <li><a href="/src/pages/about_info/guide.html">Tài liệu hướng dẫn</a></li>
 
-                                      <li><a href="/src/pages/about_info/about-group.html">Nhóm phát triển</a></li>
+                                 
                                 </ul>
                             </li>
 
@@ -84,7 +87,7 @@
                                 <ul class="dropdown-menu">
 
 
-                                    <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+                                   
 
                                     <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
                                     <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
@@ -110,10 +113,11 @@
                                 <ul class="dropdown-menu">
 
 
+
                                   
 
                                     <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
-                                    <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                    <li><a href="/src/pages/workshop/materials.html">Dự Án Workshop</a></li>
                                     <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
                                 </ul>
                             </li>
@@ -135,11 +139,14 @@
     <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
   </div>
   <!-- KHI CHƯA ĐĂNG NHẬP -->
-  <div class="header__user header__user-login">
-    <a href="/src/pages/user/sign-in.html"><span><i class="fas fa-user"></i> Đăng nhập </span></a>
-                    <span class="divider">|</span>
-                    <a href="/src/pages/user/sign-up.html"><span> <i class="fas fa-pencil-alt"></i> Đăng ký </span></a>
-  </div>
+
+  <!-- <div class="header__user header__user-login">
+      <a href="/src/pages/user/sign-in.html">Đăng nhập</a>
+      <span class="divider">|</span>
+      <a href="/src/pages/user/sign-up.html">Đăng ký</a>
+  </div> -->
+
+
 
   <!-- KHI ĐÃ ĐĂNG NHẬP -->
   <div class="header__user header__user-logged">
@@ -164,81 +171,125 @@
     </div>
 </header>
 
-    <main class="material-detail">
-      <div class="material-detail__container">
-        <div class="material-detail__image">
-          <img
-            src="../../assets/images/workshop/robot-mini.jpg"
-            alt="Lắp ráp Robot mini"
-          />
+ <div class="back">
+    <a href="../../../index.html">Trang Chủ</a>
+    <span>/</span>
+    <a href="../../pages/workshop/events.html">Sự kiện</a>
+        <span>/</span>
+    <a href="../../pages/workshop/materials.html">Dự án Workshop</a>
+    <span>/</span>
+    <a href="../../pages/workshop/materials-detail.html">XBot</a>
+  </div>
+<main class="detail container">
+
+    <!-- ====== NỘI DUNG CHÍNH ===== -->
+    <article class="detail__content">
+
+        <h1 class="detail__title">Dự Án: Robot Tránh Vật Cản</h1>
+
+        <div class="detail__meta">
+            <span><i class="fa-regular fa-eye"></i> 2.1k lượt xem</span>
+            <span><i class="fa-regular fa-calendar"></i> Cập nhật: 10/01/2025</span>
         </div>
 
-        <div class="material-detail__content">
-          <h1 class="material-detail__title">
-            <i class="fa-solid fa-robot"></i> Lắp ráp Robot mini
-          </h1>
-          <p class="material-detail__desc">
-            Tài liệu này hướng dẫn các bé cách lắp ráp robot mini có thể di chuyển
-            và phát sáng, giúp rèn luyện tư duy kỹ thuật và kỹ năng sáng tạo. Các
-            bước được minh họa bằng hình ảnh dễ hiểu, phù hợp với độ tuổi từ 6–10
-            tuổi.
-          </p>
 
-          <ul class="material-detail__info">
-            <li>
-              <i class="fa-solid fa-calendar-days"></i>
-              Ngày đăng: 26/10/2025
-            </li>
-            <li>
-              <i class="fa-solid fa-user-graduate"></i>
-              Độ tuổi phù hợp: 6–10 tuổi
-            </li>
-            <li>
-              <i class="fa-solid fa-clock"></i>
-              Thời gian học: 30 phút
-            </li>
-          </ul>
 
-          <div class="material-detail__actions">
-            <a href="materials.html" class="btn-back">
-              <i class="fa-solid fa-arrow-left"></i> Quay lại thư viện
-            </a>
-            <a href="#" class="btn-download">
-              <i class="fa-solid fa-download"></i> Tải tài liệu
-            </a>
-          </div>
-        </div>
-      </div>
+	<div class="toc">
+    <h3>Mục lục</h3>
+    <ul>
+        <li><a href="#muc-tieu">Mục Tiêu</a></li>
+        <li><a href="#chuan-bi">Chuẩn Bị</a></li>
+        <li><a href="#ket-luan">Lời kết</a></li>
+    </ul>
+</div>
 
-      <section class="material-detail__related">
-        <h2 class="related__title">📚 Tài liệu khác bạn có thể thích</h2>
-        <div class="related__list">
-          <div class="related__item">
-            <img
-              src="../../assets/images/workshop/science-fun.jpg"
-              alt="Khoa học vui"
-            />
-            <p>Khoa học vui</p>
-          </div>
+        <!-- ======= GIỚI THIỆU ====== -->
+        <section class="detail__section">
+            <h2 >Giới thiệu dự án</h2>
+            <p>
+                Robot tránh vật cản là một trong những dự án STEM cực kỳ phổ biến dành cho học sinh
+                từ cấp 2 – cấp 3. Dự án giúp học sinh hiểu về cảm biến siêu âm, lập trình Arduino,
+                điều khiển động cơ và tư duy logic trong robot di chuyển tự động.
+            </p>
+        </section>
 
-          <div class="related__item">
-            <img
-              src="../../assets/images/workshop/space.jpg"
-              alt="Khám phá không gian"
-            />
-            <p>Khám phá không gian</p>
-          </div>
+        <!-- ====== MỤC TIÊU ===== -->
+        <section class="detail__section">
+            <h2 id="muc-tieu">Mục Tiêu Dự Án</h2>
+            <ul>
+                <li>Biết cách sử dụng cảm biến siêu âm HC-SR04</li>
+                <li>Lập trình Arduino đọc dữ liệu khoảng cách</li>
+                <li>Điều khiển động cơ DC hoặc động cơ bánh răng</li>
+                <li>Xây dựng robot tự tránh vật cản thông minh</li>
+            </ul>
+        </section>
 
-          <div class="related__item">
-            <img
-              src="../../assets/images/workshop/engineer.jpg"
-              alt="Kỹ sư nhí sáng tạo"
-            />
-            <p>Kỹ sư nhí sáng tạo</p>
-          </div>
-        </div>
-      </section>
-    </main>
+        <!-- ======= LINH KIỆN ====== -->
+        <section class="detail__section">
+            <h2 id="chuan-bi">Chuẩn Bị Linh Kiện</h2>
+            <ul>
+                <li>1x Arduino Uno R3</li>
+                <li>1x Cảm biến siêu âm HC-SR04</li>
+                <li>2x Động cơ DC + Board L298N</li>
+                <li>Pin 18650 + Holder</li>
+                <li>Khung xe 2 bánh</li>
+                <li>Dây cắm & Jumper</li>
+            </ul>
+        </section>
+
+        <!-- ====== CODE ARDUINO ====== -->
+        <section class="detail__section">
+            <h2>Code Arduino mẫu</h2>
+
+<pre class="code-block">
+#define trig 9
+#define echo 10
+long duration;
+int distance;
+
+void setup(){
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  Serial.begin(9600);
+}
+
+void loop(){
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
+
+  duration = pulseIn(echo, HIGH);
+  distance = duration * 0.034 / 2;
+
+  Serial.println(distance);
+  delay(200);
+}
+</pre>
+        </section>
+
+        <!-- ====== KẾT LUẬN ===== -->
+        <section class="detail__section">
+            <h2 id="ket-luan"> Lời kết</h2>
+            <p>
+                Đây là dự án phù hợp cho học sinh mới bắt đầu làm quen với robot.  
+                Chỉ cần vài linh kiện cơ bản là bạn có thể tự chế tạo một robot di chuyển thông minh.
+                Nếu muốn nâng cấp, bạn có thể thêm cảm biến hồng ngoại, Bluetooth hoặc module WiFi.
+            </p>
+        </section>
+
+    </article>
+
+
+    <!-- ====== BÀI VIẾT LIÊN QUAN (TỰ ĐỘNG) ====== -->
+    <aside class="related">
+        <h2>Bài viết liên quan</h2>
+        <div id="relatedList" class="related__list"></div>
+    </aside>
+
+</main>
+
 
 <!--FOOTER-->
 <!-- Wave Divider -->
@@ -321,7 +372,13 @@
         <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
     </div>
 </footer>
-     <script src="../../assets/js/header.js"></script>
-    <script src="../../assets/js/components.js"></script>
-  </body>
+
+
+<script src="../../assets/js/pages/materials-detail.js"></script>
+<script src="../../assets/js/components.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+</body>
+
+
 </html>

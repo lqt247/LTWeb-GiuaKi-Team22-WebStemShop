@@ -18,6 +18,7 @@
 
 <body>
 
+
     <!--HEADER-->
     <header class="header">
         <!-- PHẦN TRÊN: thông tin + mạng xã hội -->
@@ -80,7 +81,7 @@
                                     <a href="/src/pages/shop/shop.html">Cửa hàng <i
                                             class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+                                     
                                         <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
                                         <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
                                         <li><a href="/src/pages/shop/checkout.html">Thanh toán</a></li>
@@ -101,7 +102,7 @@
                                             class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="/src/pages/workshop/register.html">Đăng ký tham gia</a></li>
-                                        <li><a href="/src/pages/workshop/materials.html">Tài liệu Workshop</a></li>
+                                        <li><a href="/src/pages/workshop/materials.html">Dự Án Workshop</a></li>
                                         <li><a href="/src/pages/workshop/rate.html">Đánh giá</a></li>
                                     </ul>
                                 </li>
@@ -122,12 +123,12 @@
                         <a href="/src/pages/shop/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                     <!-- KHI CHƯA ĐĂNG NHẬP -->
-                    <div class="header__user header__user-login">
+                    <!-- <div class="header__user header__user-login">
                         <a href="/src/pages/user/sign-in.html"><span><i class="fas fa-user"></i> Đăng nhập </span></a>
                         <span class="divider">|</span>
                         <a href="/src/pages/user/sign-up.html"><span> <i class="fas fa-pencil-alt"></i> Đăng ký
                             </span></a>
-                    </div>
+                    </div> -->
 
                     <!-- KHI ĐÃ ĐĂNG NHẬP -->
                     <div class="header__user header__user-logged">
@@ -162,8 +163,9 @@
         <div class="back">
             <a href="../../../index.html">Trang Chủ</a>
             <span>/</span>
-            <a href="#">Bài viết</a>
+            <a href="#">Giới thiệu</a>
         </div>
+
 
         <!-- SECTION: ABOUT BANNER: STEMSHOP -->
         <section class="section__about-banner">
@@ -171,12 +173,15 @@
 
                 <!-- ẢNH CHÍNH -->
                 <div class="about-image">
+
                     <img src="../../assets/images/about/about-main.png" alt="Học tập STEM sáng tạo"
                         class="main-image" />
+
                 </div>
 
                 <!-- NỘI DUNG -->
                 <div class="about-content">
+
                     <h5><i class="fa-solid fa-graduation-cap"></i> Về 3.T STEMSHOP</h5>
                     <h1>Khơi Dậy Đam Mê Khám Phá Của Bạn Nhỏ<br />Cùng Mô Hình Học Tập STEM Sáng Tạo</h1>
                     <p>
@@ -188,6 +193,7 @@
                     </p>
                     <a href="/src/pages/about_info/about-stem.html" class="btn-readmore">
                         TÌM HIỂU THÊM <i class="fa-solid fa-arrow-right-long"></i>
+
                     </a>
                 </div>
 
@@ -197,7 +203,8 @@
 
 
 
-    </main>
+
+    
     <!-- SECTION: ABOUT MISSION -->
     <section class="section__about-mission">
         <div class="about-container">
@@ -285,23 +292,29 @@
 
             <div class="team-grid">
                 <div class="team-card">
+
                     <img src="../../assets/images/about/user-male-circle.jpg" alt="Thành viên nhóm 1">
                     <h3>Lê Quang Trường</h3>
                     <p>MSSV: 23130355</p>
+
                     <p>Software Developer</p>
                 </div>
 
                 <div class="team-card">
+
                     <img src="../../assets/images/about/user-male-circle.jpg" alt="Thành viên nhóm 2">
                     <h3>Phan Văn Thi</h3>
                     <p>MSSV: 23130309</p>
+
                     <p>Software Developer</p>
                 </div>
 
                 <div class="team-card">
+
                     <img src="../../assets/images/about/user-male-circle.jpg" alt="Thành viên nhóm 3">
                     <h3>Nguyễn Thanh Tuấn</h3>
                     <p>MSSV: 20130456</p>
+
                     <p>Software Developer</p>
                 </div>
             </div>
@@ -313,11 +326,10 @@
             </div>
         </div>
     </section>
-
-
-
-
-
+     <div class="back-to-top">
+            <img src="../../assets/images/shop/back-to-top.png" alt="back-to-top">
+        </div>
+    </main>
 
     <!--FOOTER-->
     <!-- Wave Divider -->
@@ -399,8 +411,27 @@
             <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
         </div>
     </footer>
+       <script>
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
     <script src="../../assets/js/components.js"></script>
-    <script src="../../assets/js/header.js"></script>
+    
 </body>
 
 </html>

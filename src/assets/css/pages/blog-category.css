@@ -1,75 +1,24 @@
 /* ======= BLOG-CATEGORY PAGE LAYOUT ======= */
 
 
-
+/*====BACK====*/
+.back {
+    background-color: #f6f5f4;
+    font-size: 13px;
+    padding: 10px;
+}
+.back a,
+.back span{
+    text-decoration: none;
+    color: #a1a0a0;
+    margin-left: 20px;
+}
 body {
     background-color: #fff9f8;
 }
 
 /* ==== BANNER CHÍNH ==== */
 
-
-.blog-category-bannerMain {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 100vw;
-    background: linear-gradient(120deg, #f35386, #ff8bb5);
-    color: #fff;
-    text-align: center;
-    position: relative;
-    padding: 100px 20px 80px;
-    margin-bottom: 60px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    z-index: 1;
-}
-
-.blog-banner__content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.blog-banner__title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #fff;
-}
-
-.blog-banner__subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    opacity: 0.9;
-    margin-bottom: 25px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.blog-breadcrumb {
-    font-size: 15px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.9);
-}
-
-.blog-breadcrumb a {
-    color: #9c00a1;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
-
-.blog-breadcrumb a:hover {
-    opacity: 0.8;
-    color: #6d0000;
-}
-
-.blog-breadcrumb i {
-    margin: 0 8px;
-    color: #48004b;
-}
 
 /* ==== LAYOUT CHUNG ==== */
 .blog-category-body {
@@ -78,6 +27,7 @@ body {
     width: 90%;
     margin: 0 auto;
     align-items: flex-start;
+    margin: 25px;
 }
 
 /* ==== SIDEBAR ==== */
