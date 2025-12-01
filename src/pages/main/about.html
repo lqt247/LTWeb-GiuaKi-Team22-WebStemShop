@@ -81,7 +81,7 @@
                                     <a href="/src/pages/shop/shop.html">Cửa hàng <i
                                             class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="/src/pages/shop/shop.html">Danh mục sản phẩm</a></li>
+                                     
                                         <li><a href="/src/pages/shop/cart.html">Giỏ hàng</a></li>
                                         <li><a href="/src/pages/shop/wishlist.html">Yêu thích</a></li>
                                         <li><a href="/src/pages/shop/checkout.html">Thanh toán</a></li>
@@ -163,7 +163,7 @@
         <div class="back">
             <a href="../../../index.html">Trang Chủ</a>
             <span>/</span>
-            <a href="#">Bài viết</a>
+            <a href="#">Giới thiệu</a>
         </div>
 
 
@@ -204,7 +204,7 @@
 
 
 
-    </main>
+    
     <!-- SECTION: ABOUT MISSION -->
     <section class="section__about-mission">
         <div class="about-container">
@@ -326,7 +326,10 @@
             </div>
         </div>
     </section>
-
+     <div class="back-to-top">
+            <img src="../../assets/images/shop/back-to-top.png" alt="back-to-top">
+        </div>
+    </main>
 
     <!--FOOTER-->
     <!-- Wave Divider -->
@@ -408,8 +411,27 @@
             <p>© 2025 STEMSHOP - Nhóm 22 | All rights reserved.</p>
         </div>
     </footer>
+       <script>
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
     <script src="../../assets/js/components.js"></script>
-
+    
 </body>
 
 </html>

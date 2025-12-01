@@ -1,4 +1,15 @@
-
+/*====BACK====*/
+.back {
+    background-color: #f6f5f4;
+    font-size: 13px;
+    padding: 10px;
+}
+.back a,
+.back span{
+    text-decoration: none;
+    color: #a1a0a0;
+    margin-left: 20px;
+}
 .detail {
     display: grid;
     grid-template-columns: 3fr 1fr;
